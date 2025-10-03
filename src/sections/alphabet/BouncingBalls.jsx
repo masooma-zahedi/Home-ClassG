@@ -114,7 +114,7 @@ export default function BouncingBalls() {
   }
 
   return (
-    <div className="position-relative p-3  rounded-3 my-5 container" style={{ height: "90vh", background:"linear-gradient(135deg, #FFDEE9, #B5FFFC)"}}>
+    <div className="position-relative p-3  rounded-3 my-5 container" style={{ height: "97vh", background:"linear-gradient(135deg, #FFDEE9, #B5FFFC)"}}>
         <h2 className="text-center text-danger border border-3 border-danger p-2 rounded mb-3">بازی کلمات</h2>
       <audio id="myAudio" src={`${process.env.PUBLIC_URL}/sounds/soft-1.mp3`} preload="auto"></audio>
       <button className="btn btn-info" onClick={softSoundPlay}>
