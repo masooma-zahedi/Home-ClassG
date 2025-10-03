@@ -11,7 +11,7 @@ export default function BouncingBalls() {
     // برای کلاس D : 
     // "حرف ن":["نان","اَنار","نارنج","نیش","دَندان","آب نَبات","نَسیم","آتَش نِشان","نَوَسان","ناز","نِجات","ناخُن","نازَنین","نَردِبان","نارَس","نازِل","دانِش",],
     // کلاس G
-    "کلاس G":["آب","بابا","پاپا","تاب","داد","مات","موز","مَغز","راد","باد","مَرد","موم","ماست","مِداد","پاپا","تاب","داد","موتور","آمار","رام","مُپ","موج","مُژده","ماتَم","دار","تار","بار","پا",],
+    "click to start":["آب","بابا","پاپا","تاب","داد","مات","موز","مَغز","راد","باد","مَرد","موم","ماست","مِداد","پاپا","تاب","داد","موتور","آمار","رام","مُپ","موج","مُژده","ماتَم","دار","تار","بار","پا",],
   };
 
   const colors = ["#ff6b6b", "#6bcfff", "#ffd93d", "#6bff95", "#c86bff", "#ff9f40"];
@@ -114,14 +114,15 @@ export default function BouncingBalls() {
   }
 
   return (
-    <div className="position-relative p-3 rounded-3 my-5 container" style={{ height: "70vh", background:"linear-gradient(135deg, #FFDEE9, #B5FFFC)"}}>
+    <div className="position-relative p-3  rounded-3 my-5 container" style={{ height: "90vh", background:"linear-gradient(135deg, #FFDEE9, #B5FFFC)"}}>
+        <h2 className="text-center text-danger border border-3 border-danger p-2 rounded mb-3">بازی کلمات</h2>
       <audio id="myAudio" src={`${process.env.PUBLIC_URL}/sounds/soft-1.mp3`} preload="auto"></audio>
       <button className="btn btn-info" onClick={softSoundPlay}>
         Play Sound
       </button>
       {/* ✅ منوی انتخاب دسته */}
-      <div className="d-flex justify-content-start mt-3">
-        <button className="btn btn-warning outLine-none mx-2" onClick={()=>setShowList(!showList)}>فهرست</button>
+      <div className="d-flex justify-content-start mt-3 mb-5">
+        {/* <button className="btn btn-warning outLine-none mx-2" onClick={()=>setShowList(!showList)}>فهرست</button> */}
         {showList && Object.keys(categories).map((cat) => (
           <button
             key={cat}
@@ -135,7 +136,7 @@ export default function BouncingBalls() {
 
       {/* ✅ توپ‌ها */}
       <div className="d-flex justify-content-center align-items-center flex-wrap" style={{ height: "80%" }}>
-        {Array.from({ length: 6 }).map((_, index) => {
+        {Array.from({ length: 5 }).map((_, index) => {
           const randomSize = 60 + Math.floor(Math.random() * 50);
 
           return (
