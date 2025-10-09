@@ -4,7 +4,6 @@ import BrokenGlass from "../sections/alphabet/BrokenGlass";
 import WordGameWithCategories from "../sections/alphabet/WordGameWithCategories";
 import BouncingBalls from "../sections/alphabet/BouncingBalls";
 import WordCardsSingle from "../sections/alphabet/WordCardsSingle";
-import SunWords from "../sections/alphabet/SunWords";
 
 export default function Home() {
   return (<>
@@ -13,6 +12,5 @@ export default function Home() {
     {/* <BouncingBalls/> */}
     <WordGameWithCategories initialCategory="وسایل مدرسه" />
     {/* <WordCardsSingle/> */}
-    <SunWords/>
   </>)
 }
