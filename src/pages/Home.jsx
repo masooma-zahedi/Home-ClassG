@@ -3,13 +3,16 @@ import { CardAlphaCompo } from "../sections/alphabet/CardAlphaCompo";
 import BrokenGlass from "../sections/alphabet/BrokenGlass";
 import WordGameWithCategories from "../sections/alphabet/WordGameWithCategories";
 import BouncingBalls from "../sections/alphabet/BouncingBalls";
+import WordCardsSingle from "../sections/alphabet/WordCardsSingle";
+import SunWords from "../sections/alphabet/SunWords";
 
 export default function Home() {
   return (<>
     <CardAlphaCompo/> 
     {/* <BrokenGlass/> */}
-    <BouncingBalls/>
+    {/* <BouncingBalls/> */}
     <WordGameWithCategories initialCategory="وسایل مدرسه" />
-
+    {/* <WordCardsSingle/> */}
+    <SunWords/>
   </>)
 }

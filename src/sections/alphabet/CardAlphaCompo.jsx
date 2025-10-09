@@ -266,17 +266,17 @@ export let infoCard = [
     //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ق-long.jpg`,
     //     longSoundId:"letterGhaf-3"
     // },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ک.jpg`,
-    //     title:"حرف ک ",
-    //     picFinger:`https://previews.123rf.com/images/nikiteev/nikiteev1609/nikiteev160901559/62757103-vector-color-cartoon-illustration-running-shoes-on-white-background.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ک.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ک.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ک.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ک.png`,],
-    //     examplePicId:"exampleKaf-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-4-ک-short.jpg`,
-    //     shortSoundId:"letterKaf-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ک-long.jpg`,
-    //     longSoundId:"letterKaf-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ک.jpg`,
+        title:"حرف ک ",
+        picFinger:`https://previews.123rf.com/images/nikiteev/nikiteev1609/nikiteev160901559/62757103-vector-color-cartoon-illustration-running-shoes-on-white-background.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ک.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ک.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ک.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ک.png`,],
+        examplePicId:"exampleKaf-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-4-ک-short.jpg`,
+        shortSoundId:"letterKaf-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ک-long.jpg`,
+        longSoundId:"letterKaf-3"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-1-گ.jpg`,
     //     title:"حرف گ ",
