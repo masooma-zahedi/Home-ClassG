@@ -4,13 +4,25 @@ import BrokenGlass from "../sections/alphabet/BrokenGlass";
 import WordGameWithCategories from "../sections/alphabet/WordGameWithCategories";
 import BouncingBalls from "../sections/alphabet/BouncingBalls";
 import WordCardsSingle from "../sections/alphabet/WordCardsSingle";
+import { CarouselAlphaExp } from "../sections/alphabet/CarouselAlphaExp";
 
 export default function Home() {
   return (<>
     <CardAlphaCompo/> 
-    {/* <BrokenGlass/> */}
-    {/* <BouncingBalls/> */}
-    <WordGameWithCategories initialCategory="وسایل مدرسه" />
-    {/* <WordCardsSingle/> */}
+    <div className="my-4">
+      <h4 className="my-4 text-center bg-info p-3 rounded">صداهای کوتاه</h4>
+      <CarouselAlphaExp idCarouselAlpha="shorthref1"  dataCarousel="alphaShortCrousel"/>
+    </div>
+    <div className="border border-3 border-primary rounded"></div>
+    <div className="my-4">
+      <h4 className="my-4 text-center bg-warning p-3 rounded">صداهای کشیده</h4>
+    <CarouselAlphaExp idCarouselAlpha="longhref1"  dataCarousel="alphaLongCrousel"/>
+    </div>
+    <BrokenGlass/>
+
+    {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}
+    {/* <WordCardsSingle/> */}   
+     {/* <BouncingBalls/> */}
+
   </>)
 }
