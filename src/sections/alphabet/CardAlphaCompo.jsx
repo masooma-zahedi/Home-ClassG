@@ -167,17 +167,17 @@ export let infoCard = [
     //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/س-long-1.jpg`,
     //     longSoundId:"letterC2-1"
     // },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ش.jpg`,
-    //     title:"حرف ش ",
-    //     picFinger:`https://i.pinimg.com/736x/d2/8a/f8/d28af8154fa92e4972c428cf5dea0816.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-22-1-ش.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-22-2-ش.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-22-3-ش.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-22-4-ش.png`,],
-    //     examplePicId:"exampleL-Shin1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-1-ش.jpg`,
-    //     shortSoundId:"letterShin-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ش-long.jpg`,
-    //     longSoundId:"letterShin-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ش.jpg`,
+        title:"حرف ش ",
+        picFinger:`https://i.pinimg.com/736x/d2/8a/f8/d28af8154fa92e4972c428cf5dea0816.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-22-1-ش.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-22-2-ش.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-22-3-ش.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-22-4-ش.png`,],
+        examplePicId:"exampleL-Shin1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-1-ش.jpg`,
+        shortSoundId:"letterShin-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ش-long.jpg`,
+        longSoundId:"letterShin-3"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ص.jpg`,
     //     title:"حرف ص ",
