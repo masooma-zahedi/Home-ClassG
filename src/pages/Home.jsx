@@ -21,7 +21,7 @@ export default function Home() {
     <CarouselAlphaExp idCarouselAlpha="longhref1"  dataCarousel="alphaLongCrousel"/>
     </div>
     <BrokenGlass/>
-    <SylabeWords/>
+    {/* <SylabeWords/> */}
     {/* <ObjectSentenceGame/> */}
 
     {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}
