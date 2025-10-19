@@ -6,6 +6,7 @@ import BouncingBalls from "../sections/alphabet/BouncingBalls";
 import WordCardsSingle from "../sections/alphabet/WordCardsSingle";
 import { CarouselAlphaExp } from "../sections/alphabet/CarouselAlphaExp";
 import ObjectSentenceGame from "../sections/alphabet/ObjectSentenceGame";
+import { SylabeWords } from "../sections/alphabet/SylabeWords";
 
 export default function Home() {
   return (<>
@@ -20,6 +21,7 @@ export default function Home() {
     <CarouselAlphaExp idCarouselAlpha="longhref1"  dataCarousel="alphaLongCrousel"/>
     </div>
     <BrokenGlass/>
+    <SylabeWords/>
     {/* <ObjectSentenceGame/> */}
 
     {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}

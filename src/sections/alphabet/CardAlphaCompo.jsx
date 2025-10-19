@@ -156,17 +156,17 @@ export let infoCard = [
     //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ژ-long.jpg`,
     //     longSoundId:"letterZh-3"
     // },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-س-2.jpg`,
-    //     title:"حرف س ",
-    //     picFinger:`https://previews.123rf.com/images/arnica/arnica1209/arnica120900002/15330219-funny-cartoon-alarm-clock.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-4.png`,],
-    //     examplePicId:"exampleL-Sin1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-س-1.jpg`,
-    //     shortSoundId:"letterC1-1",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/س-long-1.jpg`,
-    //     longSoundId:"letterC2-1"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-س-2.jpg`,
+        title:"حرف س ",
+        picFinger:`https://previews.123rf.com/images/arnica/arnica1209/arnica120900002/15330219-funny-cartoon-alarm-clock.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-4.png`,],
+        examplePicId:"exampleL-Sin1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-س-1.jpg`,
+        shortSoundId:"letterC1-1",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/س-long-1.jpg`,
+        longSoundId:"letterC2-1"
+    },
     {
         mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ش.jpg`,
         title:"حرف ش ",
