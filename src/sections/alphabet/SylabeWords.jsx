@@ -198,7 +198,7 @@ export const SylabeWords = () => {
                     aria-label={`انتخاب کلمه ${item.word}`}
                   >
                     <div className="card-body d-flex justify-content-center align-items-center p-1" dir="rtl">
-                      <h5 className="fw-bold m-0" style={{ fontSize: "20px" }}>{item.word}</h5>
+                      <h5 className="fw-bold mt-2" style={{ fontSize: "20px" }}>{item.word}</h5>
                     </div>
                   </button>
                 ))}
