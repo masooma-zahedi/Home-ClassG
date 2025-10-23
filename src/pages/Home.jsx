@@ -10,6 +10,7 @@ import { SylabeWords } from "../sections/alphabet/SylabeWords";
 
 export default function Home() {
   return (<>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها امروز حرف س را یاد گرفتند. بچه ها از روی جملات زیر دو بار بنویسند. </h4>
     <CardAlphaCompo/> 
     <div className="my-4">
       <h4 className="my-4 text-center bg-info p-3 rounded">صداهای کوتاه</h4>
@@ -20,8 +21,8 @@ export default function Home() {
       <h4 className="my-4 text-center bg-warning p-3 rounded">صداهای کشیده</h4>
     <CarouselAlphaExp idCarouselAlpha="longhref1"  dataCarousel="alphaLongCrousel"/>
     </div>
-    <BrokenGlass/>
-    {/* <SylabeWords/> */}
+    {/* <BrokenGlass/> */}
+    <SylabeWords/>
     {/* <ObjectSentenceGame/> */}
 
     {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}
