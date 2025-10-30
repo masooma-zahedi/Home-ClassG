@@ -10,7 +10,9 @@ import { SylabeWords } from "../sections/alphabet/SylabeWords";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها امروز حرف س را یاد گرفتند. بچه ها از روی جملات زیر دو بار بنویسند. </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">لطفا فعالیت زیر را با بچه ها تمرین کنید. همین طور روی الفبا و جملات قبلی کار کنید. </h4>
+      <ObjectSentenceGame/>
+
     <CardAlphaCompo/> 
     <div className="my-4">
       <h4 className="my-4 text-center bg-info p-3 rounded">صداهای کوتاه</h4>
@@ -23,7 +25,6 @@ export default function Home() {
     </div>
     {/* <BrokenGlass/> */}
     <SylabeWords/>
-    {/* <ObjectSentenceGame/> */}
 
     {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}
     {/* <WordCardsSingle/> */}   

@@ -4,23 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function BouncingBalls() {
   // ✅ دسته‌های مختلف
   const categories = {
-    // "میوه‌ها": ["سیب", "موز", "انار",],
-    // "غذاها": ["پلو", "خورشت", "سوپ", "کباب", "ساندویچ", "پیتزا"],
-    // "حیوانات": ["گربه", "سگ", "اسب", "پرنده", "ماهی", "خرگوش"],
-    // "حرف ن":["نان","اَنار","نارنج","نیش","نَرم","نَقاش","سَنگ","رَنگ","بَنَفش","دَندان","آب نَبات","نَسیم","کَمان","تَکان","نارِنگی","کَفَن","آتَش نِشان","نِگران","نَرگِس","نَوَسان","نازُک","ناقوس","نَعل","ناحَق","نِجات","ناخُن","نازَنین","نَردِبان","نارَس","نازِل","نیکو","دانِش","سَنجاق","نَمَد",],
-    // برای کلاس D : 
-    // "حرف ن":["نان","اَنار","نارنج","نیش","دَندان","آب نَبات","نَسیم","آتَش نِشان","نَوَسان","ناز","نِجات","ناخُن","نازَنین","نَردِبان","نارَس","نازِل","دانِش",],
-    // کلاس G
-    "click to start":["آب","بابا","پاپا","تاب","داد","مات","موز","مَغز","راد","باد","مَرد","موم","ماست","مِداد","پاپا","تاب","داد","موتور","آمار","رام","مُپ","موج","مُژده","ماتَم","دار","تار","بار","پا",],
+    "click to start":["سَبَد","سَرباز","سَبز","بَست","سیراب","بَسی","سِپاس","بَسیج","سِز","ساز","سُرب","سُرخ","سِپَر","سَر","اَست","سیر","سَبا","سیری","سیب","سوز",],
   };
 
   const colors = ["#ff6b6b", "#6bcfff", "#ffd93d", "#6bff95", "#c86bff", "#ff9f40"];
 
-  const [selectedCategory, setSelectedCategory] = useState("میوه‌ها");
-  const [words, setWords] = useState(categories["میوه‌ها"]);
+  const [selectedCategory, setSelectedCategory] = useState("click to start");
+  const [words, setWords] = useState(categories["click to start"]);
   const [activeIndex, setActiveIndex] = useState(null);
   const [paused, setPaused] = useState(false);
-  const [usedWords, setUsedWords] = useState({});
+  const [usedWords, setUsedWords] = useState({categories});
   const [gameOver, setGameOver] = useState(false);
   const [showList , setShowList] = useState(true)
 
