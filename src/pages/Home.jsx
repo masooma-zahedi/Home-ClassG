@@ -7,11 +7,19 @@ import WordCardsSingle from "../sections/alphabet/WordCardsSingle";
 import { CarouselAlphaExp } from "../sections/alphabet/CarouselAlphaExp";
 import ObjectSentenceGame from "../sections/alphabet/ObjectSentenceGame";
 import { SylabeWords } from "../sections/alphabet/SylabeWords";
+import VideoCard from "../sections/alphabet/VideoCard";
+import WordFlipBox from "../sections/alphabet/WordFlipBox";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">لطفا فعالیت زیر را با بچه ها تمرین کنید. همین طور روی الفبا و جملات قبلی کار کنید. </h4>
-      <ObjectSentenceGame/>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">امروز حرف ن را یاد گرفتیم، بچه ها از روی کلمات حرف ن یک بار بنویسند و سعی کنند از روی آن بخوانند. فیلم زیر را هم معنی اش را یاد بگیرند.  </h4>
+      {/* <ObjectSentenceGame/> */}
+        <VideoCard
+        title="قصه کوتاه امروز"
+        description="متن فارسی داستان زیر را بخوانید."
+        videoFileName={`${process.env.PUBLIC_URL}/video/bigThings.mp4`}  // فقط اسم فایل ویدیوی mp4
+    />
+        <WordFlipBox/>
 
     <CardAlphaCompo/> 
     <div className="my-4">
@@ -24,7 +32,8 @@ export default function Home() {
     <CarouselAlphaExp idCarouselAlpha="longhref1"  dataCarousel="alphaLongCrousel"/>
     </div>
     {/* <BrokenGlass/> */}
-    <SylabeWords/>
+
+    {/* <SylabeWords/> */}
 
     {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}
     {/* <WordCardsSingle/> */}   

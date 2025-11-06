@@ -42,9 +42,9 @@ if(dataCarousel === "alphaShortCrousel"){
 
   return (
     <>
-        <section className="container  mt-4" id={idCarouselAlpha}>
+        <section className="container border border-3 border-info rounded-2  mt-4" id={idCarouselAlpha}>
             <div id={dataCarousel.buttonId} className="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="300000">
-            <div className="carousel-inner">
+            <div className="carousel-inner ">
                 {dataCarousel.carouselImg.map((item, index)=>{
                     return(
                         <>
@@ -56,12 +56,12 @@ if(dataCarousel === "alphaShortCrousel"){
                 })}
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target={`#${dataCarousel.buttonId}`} data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="carousel-control-prev-icon bg-danger rounded-pill" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target={`#${dataCarousel.buttonId}`} data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
+                <span className="carousel-control-next-icon bg-danger rounded-pill" aria-hidden="true"></span>
+                <span className="visually-hidden ">Next</span>
             </button>
             </div>
         </section>
@@ -69,27 +69,4 @@ if(dataCarousel === "alphaShortCrousel"){
 )
 }
 
-// const AlphaStory =()=>{
-//     return(
-//         <>
-//             <Routes>
-//                 <Route path='/puyaStory1' element={<TheStory srcStory={puyaStory}/>}  />
-//                 <Route path='/aminFireFighter1' element={<TheStory srcStory={aminFireFighter}/>}  />
-//                 <Route path='/worriedPami1' element={<TheStory srcStory={pami}/>}  />
-//                 <Route path='/smallPea1' element={<TheStory srcStory={smallPea}/>}  />
-//             </Routes>
-//         </>
-//     )
-// }
 
-// export const CarouselAlphaExp = ()=>{
-//     return(
-//         <>
-//             <Routes>
-//                 <Route path='/shortSound' element={<CarouselAlpha idCarouselAlpha="shorthref1"  dataCarousel={alphaShortCrousel}/>}  />
-//                 <Route path='/longSound' element={<CarouselAlpha  idCarouselAlpha="longhref1"  dataCarousel={alphaLongCrousel}/>}  />
-//             </Routes>
-            
-//         </>
-//     )
-// }
