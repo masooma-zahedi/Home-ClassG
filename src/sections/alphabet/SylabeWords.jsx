@@ -25,17 +25,17 @@ export const SylabeWords = () => {
       titleColor: "rgba(58, 210, 111, 1)",
       sylabelBg: "rgba(36, 190, 190, 1)",
       sentenceRow: [
-        [{ word: "بابا", syla: "با + با" }, { word: "آمَد.", syla: "آ + مَد" }],
-        [{ word: "مادَر", syla: "ما + دَر" }, { word: "آب", syla: "آب" }, { word: "داد.", syla: "داد" }],
-        [{ word: "بابَک", syla: "با + بَک" }, { word: "شاد", syla: "شاد" }, { word: "اَست.", syla: "اَست" }],
-        [{ word: "مَت", syla: "مَت" }, { word: "پَد", syla: "پَد" }, { word: "داد.", syla: "داد" }],
-        [{ word: "شَب", syla: "شَب" }, { word: "تار", syla: "تار" }, { word: "است.", syla: "اَست" }],
-        [{ word: "پِدَر", syla: "پِ + دَر" }, { word: "آمَد.", syla: "آ + مَد" }],
-        // [{ word: "مادَر", syla: "ما + دَر" }, { word: "دَست", syla: "دَست" }, { word: "داد.", syla: "داد" }],
-        // [{ word: "بابا", syla: "با + با" }, { word: "پَت", syla: "پَت" }, { word: "را", syla: "را" }, { word: "بُرد.", syla: "بُرد" }],
-        // [{ word: "کُمُد", syla: "کُ + مُد" }, { word: "پُر", syla: "پُر" }, { word: "بود.", syla: "بود" }],
+        // [{ word: "بابا", syla: "با + با" }, { word: "آمَد.", syla: "آ + مَد" }],
+        // [{ word: "مادَر", syla: "ما + دَر" }, { word: "آب", syla: "آب" }, { word: "داد.", syla: "داد" }],
+        // [{ word: "بابَک", syla: "با + بَک" }, { word: "شاد", syla: "شاد" }, { word: "اَست.", syla: "اَست" }],
+        // [{ word: "مَت", syla: "مَت" }, { word: "پَد", syla: "پَد" }, { word: "داد.", syla: "داد" }],
+        // [{ word: "شَب", syla: "شَب" }, { word: "تار", syla: "تار" }, { word: "است.", syla: "اَست" }],
+        // [{ word: "پِدَر", syla: "پِ + دَر" }, { word: "آمَد.", syla: "آ + مَد" }],
+        [{ word: "مادَر", syla: "ما + دَر" }, { word: "دَست", syla: "دَست" }, { word: "داد.", syla: "داد" }],
+        [{ word: "بابا", syla: "با + با" }, { word: "پَت", syla: "پَت" }, { word: "را", syla: "را" }, { word: "بُرد.", syla: "بُرد" }],
+        [{ word: "کُمُد", syla: "کُ + مُد" }, { word: "پُر", syla: "پُر" }, { word: "بود.", syla: "بود" }],
         // [{ word: "مَت", syla: "مَت" }, { word: "شاد", syla: "شاد" }, { word: "شُد.", syla: "شُد" }],
-        // [{ word: "پَدَر", syla: "پَ + دَر" }, { word: "آب", syla: "آب" }, { word: "داد.", syla: "داد" }],
+        // [{ word: "پِدَر", syla: "پِ + دَر" }, { word: "آب", syla: "آب" }, { word: "داد.", syla: "داد" }],
         // [{ word: "مادَر", syla: "ما + دَر" }, { word: "بوس", syla: "بوس" }, { word: "داد.", syla: "داد" }],
         // [{ word: "بابَک", syla: "با + بَک" }, { word: "تاب", syla: "تاب" }, { word: "را", syla: "را" }, { word: "بَست.", syla: "بَست" }],
         // [{ word: "شَب", syla: "شَب" }, { word: "آرام", syla: "آ + رام" }, { word: "است.", syla: "اَست" }],
@@ -187,9 +187,9 @@ export const SylabeWords = () => {
                 {sentence.map((item, wordIndex) => (
                   <button
                     key={wordIndex}
-                    className="card text-center  syl-card shadow-sm border-0 "
+                    className="card text-center  syl-card  shadow-sm border-0 "
                     style={{
-                      background: "linear-gradient(135deg, #74b9ff, #81ecec)",
+                      background: "linear-gradient(135deg, #dfcb63ff, #81bfecff)",
                       color: "#7a2222ff",
                       minHeight: "60px",
                       flex: "0 0 auto",
@@ -213,7 +213,7 @@ export const SylabeWords = () => {
             className="d-flex flex-column justify-content-center align-items-center shadow-lg rounded-4 p-4"
             style={{
               minHeight: "350px",
-              background: currentDataset.sylabelBg || "#00cec9",
+              background: currentDataset.sylabelBg || "#cece00ff",
               position: "sticky",
               top: "20px",
             }}
@@ -239,7 +239,7 @@ export const SylabeWords = () => {
         className={`bottom-sheet ${sheetOpen ? "open" : "closed"}`}
         role="region"
         aria-label="نمایش سیلاب‌ها"
-        style={{ background: currentDataset.sylabelBg || "#00cec9" }}
+        style={{ background: currentDataset.sylabelBg || "#00a1ceff" }}
       >
         <div className="sheet-content d-flex flex-column" style={{ width: "100%" }}>
           <div
