@@ -10,10 +10,11 @@ import { SylabeWords } from "../sections/alphabet/SylabeWords";
 import VideoCard from "../sections/alphabet/VideoCard";
 import WordFlipBox from "../sections/alphabet/WordFlipBox";
 import SpellingGame from "../sections/alphabet/SpellingGame";
+import MatchingLettersPicturs from "../sections/alphabet/MatchingLettersPicturs";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها جملات زیر را تمرین کنند و بخوانند و از روی آن یکبار بنویسند. عکس کارخانگی آنها را در گروه قرار دهید.  </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها اسامی زیر را تکرار کنند و حرف اول هر اسم را کلیک و روی عکس آن دوباره کلیک کنند. این برای یادگیری حروف الفبای آنها است. جملات  را نیز تمرین کنند   </h4>
       {/* <ObjectSentenceGame/> */}
     {/* <VideoCard
       title="قصه کوتاه امروز"
@@ -22,6 +23,7 @@ export default function Home() {
     /> */}
         {/* <WordFlipBox/> */}
       {/* <SpellingGame/> */}
+      <MatchingLettersPicturs/>
     <SylabeWords/>
     <CardAlphaCompo/> 
     <div className="my-4">

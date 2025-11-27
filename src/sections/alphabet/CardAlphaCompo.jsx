@@ -288,17 +288,17 @@ export let infoCard = [
     //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-گ-long.jpg`,
     //     longSoundId:"letterGaf-3"
     // },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ل.jpg`,
-    //     title:"حرف ل ",
-    //     picFinger:`https://cdn.vectorstock.com/i/500p/27/07/adorable-sea-turtle-cartoon-vector-56082707.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ل.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ل.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ل.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ل.png`,],
-    //     examplePicId:"exampleLam-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-6-ل-short.jpg`,
-    //     shortSoundId:"letterLam-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ل-long.jpg`,
-    //     longSoundId:"letterLam-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ل.jpg`,
+        title:"حرف ل ",
+        picFinger:`https://cdn.vectorstock.com/i/500p/27/07/adorable-sea-turtle-cartoon-vector-56082707.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ل.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ل.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ل.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ل.png`,],
+        examplePicId:"exampleLam-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-6-ل-short.jpg`,
+        shortSoundId:"letterLam-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ل-long.jpg`,
+        longSoundId:"letterLam-3"
+    },
     {
         mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-م.jpg`,
         title:"حرف م ",
