@@ -14,7 +14,9 @@ import MatchingLettersPicturs from "../sections/alphabet/MatchingLettersPicturs"
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها اسامی زیر را تکرار کنند و حرف اول هر اسم را کلیک و روی عکس آن دوباره کلیک کنند. این برای یادگیری حروف الفبای آنها است. جملات  را نیز تمرین کنند   </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها کلمات حرف ل را تمرین کنند و جملات باهم بخوانیم را بخوانند و از روی آن یکبار بنویسند.   </h4>
+      <BrokenGlass/>
+      <SylabeWords/>
       {/* <ObjectSentenceGame/> */}
     {/* <VideoCard
       title="قصه کوتاه امروز"
@@ -24,7 +26,6 @@ export default function Home() {
         {/* <WordFlipBox/> */}
       {/* <SpellingGame/> */}
       <MatchingLettersPicturs/>
-    <SylabeWords/>
     <CardAlphaCompo/> 
     <div className="my-4">
       <h4 className="my-4 text-center bg-info p-3 rounded">صداهای کوتاه</h4>
@@ -35,7 +36,6 @@ export default function Home() {
       <h4 className="my-4 text-center bg-warning p-3 rounded">صداهای کشیده</h4>
     <CarouselAlphaExp idCarouselAlpha="longhref1"  dataCarousel="alphaLongCrousel"/>
     </div>
-    {/* <BrokenGlass/> */}
 
     {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}
     {/* <WordCardsSingle/> */}   
