@@ -14,8 +14,8 @@ import MatchingLettersPicturs from "../sections/alphabet/MatchingLettersPicturs"
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها کلمات حرف ل را تمرین کنند و جملات باهم بخوانیم را بخوانند و از روی آن یکبار بنویسند.   </h4>
-      <BrokenGlass/>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها کلمات زیر را بخوانند و از روی آن یکبار بنویسند.   </h4>
+      {/* <BrokenGlass/>   */}
       <SylabeWords/>
       {/* <ObjectSentenceGame/> */}
     {/* <VideoCard
