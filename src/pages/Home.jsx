@@ -11,11 +11,12 @@ import VideoCard from "../sections/alphabet/VideoCard";
 import WordFlipBox from "../sections/alphabet/WordFlipBox";
 import SpellingGame from "../sections/alphabet/SpellingGame";
 import MatchingLettersPicturs from "../sections/alphabet/MatchingLettersPicturs";
+import SunWords from "../sections/alphabet/SunWords";
 
 export default function Home() {
   return (<>
   <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها کلمات زیر را بخوانند و از روی آن یکبار بنویسند.   </h4>
-      {/* <BrokenGlass/>   */}
+      <BrokenGlass/>  
       <SylabeWords/>
       {/* <ObjectSentenceGame/> */}
     {/* <VideoCard

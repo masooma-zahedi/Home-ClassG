@@ -134,17 +134,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ر-long-1.jpg`,
         longSoundId:"letterR-2"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-ز-2.jpg`,
-    //     title:"حرف ز ",
-    //     picFinger:`https://img.freepik.com/free-vector/cheerful-cartoon-bee-with-bright-blue-eyes_1308-180308.jpg?semt=ais_incoming&w=740&q=80`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-4.png`,],
-    //     examplePicId:"exampleL-ZZ1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-ز-1.jpg`,
-    //     shortSoundId:"letterZ1-1",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ز-long-1.jpg`,
-    //     longSoundId:"letterZ1-2"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-ز-2.jpg`,
+        title:"حرف ز ",
+        picFinger:`https://img.freepik.com/free-vector/cheerful-cartoon-bee-with-bright-blue-eyes_1308-180308.jpg?semt=ais_incoming&w=740&q=80`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-4.png`,],
+        examplePicId:"exampleL-ZZ1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-ز-1.jpg`,
+        shortSoundId:"letterZ1-1",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ز-long-1.jpg`,
+        longSoundId:"letterZ1-2"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ژ-1.jpg`,
     //     title:"حرف ژ ",
@@ -404,27 +404,27 @@ export const CardAlphaCompo = () => {
             const bgColor =
               pastelColors[Math.floor(Math.random() * pastelColors.length)];
            return (
-          <div className="col-12 col-md-4 col-lg-3 mb-4" key={index + nanoid(4)}>
+          <div className="col-6 col-md-4 col-lg-3 mb-4" key={index + nanoid(4)}>
             <div className="card letter-card shadow-lg" style={{ background: bgColor }}>
               <div className="relateiv border border-danger"  style={{position:"relative"}} data-bs-toggle="modal" data-bs-target={`#${letter.examplePicId}`}>
                 <img
                   src={letter.mainPic}
-                  className="card-img-top letter-img"
+                  className="card-img-top letter-img h-75 h-md-100 p-md-2 py-md-3"
                   // data-bs-toggle="modal"
                   // data-bs-target={`#${letter.examplePicId}`}
                   alt={letter.title}
                 />
                 <div className="absolute" style={{width:'30%',height:"30%", backgroundColor:"",position:"absolute", bottom:"25%",right:"35%"}}>
-                  <img src={letter.picFinger} alt="" className="w-100 h-100" />
+                  <img src={letter.picFinger} alt="" className="w-100 h-75 h-md-100" />
                 </div>
 
               </div>
-              <div className="card-body text-center">
+              <div className="card-body text-center p-1 p-md-4">
                 <h5 className="card-title fw-bold">{letter.title}</h5>
                 <p className="card-text">با صداهای کوتاه و کشیده 🎵</p>
                 <div className="d-flex justify-content-around">
                   <button
-                    className="btn btn-success rounded-pill"
+                    className="btn btn-success p-1 rounded-pill"
                     data-bs-toggle="modal"
                     data-bs-target={`#${letter.shortSoundId}`}
                   >
