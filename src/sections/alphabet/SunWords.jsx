@@ -1,38 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-export default function SunWords({idPage}) {
+export default function SunWordsSmooth() {
   const categories = {
-    صداآ: {
-      circle: "ا",
-      boxes: ["با","تا","کا","را","ما","پا","دا","کا","دا","پا","آ","کا",]
-    },
-    صدا_و: {
-      circle: "او-و",
-      boxes: ["تو","او","کو","بو","پو","رو","دو","مو","کو",]
-    },
-    صداکوتاه2: {
-      circle: "-ُ -ِ -َ",
-      boxes: ["بَ", "رِ","تُ","پُ","دَ","تَ", "اُ","بِ","تِ","پِ","رَ","تِ","دِ","اِ","بُ","تَ","رُ","پَ","اُ","دُ","تُ",]
-    },
-//     ه: {
-//       circle: "کلمات ه",
-//       boxes: [
-//   "هیزُم","هَمکار","هَمر اه","هَشتُم","هُوش",
-//   "هِزارپا","هَمه","کُوه","چاه","راه","نامِه","خانِه","شانِه",
-//   "کاه","دانِه","ماه","سِپیدِه","آهُو","شیشِه",
-//   "کُلاه"]
-//   },
-//     صدا_م: {
-//   circle: "م",
-//   boxes: ["مار","مات","موز","مَغز","مَرد","موم","ماست","مِداد","موتور","آمار","رام","مُپ","موج","مُژده","ماتَم"]
-// },
-   صدا_ز: {
-    circle: "ز",
-    boxes: ["بُز","روز","زور","زَرد","زیب","باز","پاز","زِبر","بازی","تیز","زیر","زَر","خَز","زو","زیبا","زِشت","زار","راز","رُز"],
-    },
-
-
-
+    // صداآ: { circle: "ا", boxes: ["با","تا","کا","را","ما","پا","دا","کا","دا","پا","آ","کا"] },
+    // صدا_و: { circle: "او-و", boxes: ["تو","او","کو","بو","پو","رو","دو","مو","کو"] },
+    // صداکوتاه2: { circle: "-ُ -ِ -َ", boxes: ["بَ", "رِ","تُ","پُ","دَ","تَ","اُ","بِ","تِ","پِ","رَ","تِ","دِ","اِ","بُ","تَ","رُ","پَ","اُ","دُ","تُ"] },
+    // ه: { circle: "کلمات ه", boxes: ["هیزُم","هَمکار","هَمر اه","هَشتُم","هُوش","هِزارپا","هَمه","کُوه","چاه","راه","نامِه","خانِه","شانِه","کاه","دانِه","ماه","سِپیدِه","آهُو","شیشِه","کُلاه"] },
+    // صدا_م: { circle: "م", boxes: ["مار","مات","موز","مَغز","مَرد","موم","ماست","مِداد","موتور","آمار","رام","مُپ","موج","مُژده","ماتَم"] },
+  صدا_ز: {circle: "ز", boxes: ["بُز","روز","زور","زَرد","زیب","باز","پاز","زِبر","بازی","تیز","زیر","زَر","زو","زیبا","زِشت","زار","راز","رُز"]},
 
   };
 
@@ -41,237 +16,219 @@ export default function SunWords({idPage}) {
     "#009688", "#4caf50", "#ff9800", "#795548", "#607d8b"
   ];
 
-  const [category, setCategory] = useState("صداآ"); // دسته انتخابی
-  const [words, setWords] = useState(categories["صداآ"].boxes);
-  const [circleText, setCircleText] = useState(categories["صداآ"].circle);
-  const [rotationDeg, setRotationDeg] = useState(0);
-  const [rotating, setRotating] = useState(false);
+  const [category, setCategory] = useState("صداآ");
+  const [words, setWords] = useState([...categories[category].boxes]);
+  const [circleText, setCircleText] = useState(categories[category].circle);
   const [selected, setSelected] = useState(null);
-  const [circleColor, setCircleColor] = useState("#ffd54f");
-  const [finished, setFinished] = useState(false);
-  const [showListSun, setShowListSun] = useState(false);
+  const [rotation, setRotation] = useState(0);
+  const [size, setSize] = useState(320);
+  const [rotating, setRotating] = useState(false);
+  const [showList, setShowList] = useState(false);
 
-    const popSound = new Audio("/sounds/pop-1.wav");
-    popSound.volume = 0.5;
+  // Responsive
+  useEffect(() => {
+    const resize = () => {
+      const w = Math.min(window.innerWidth, 480);
+      setSize(w - 40);
+    };
+    resize();
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  }, []);
 
+  const radius = size * (window.innerWidth > 768 ? 0.45 : 0.38);
 
-  const norm = (x) => ((x % 360) + 360) % 360;
-
-  const handleClick = () => {
-    if (finished) {
-      setWords(categories[category].boxes);
-      setRotationDeg(0);
-      setSelected(null);
-      setCircleColor("#ffd54f");
-      setFinished(false);
-      return;
-    }
-
-    if (selected !== null) {
-      const newWords = words.filter((_, i) => i !== selected);
-      setWords(newWords);
-      setSelected(null);
-      setCircleColor("#ffd54f");
-
-      if (newWords.length === 0) {
-        setFinished(true);
-      }
-      return;
-    }
-
+  const spin = () => {
     if (words.length === 0) return;
-
+    setSelected(null);
     setRotating(true);
-    const anglePer = 360 / words.length;
+
     const idx = Math.floor(Math.random() * words.length);
-    const angleOfIdx = idx * anglePer;
+    const step = 360 / words.length;
+    const target = -90 - idx * step;
 
-    const base = norm(rotationDeg);
-    const deltaToTop = norm(-90 - angleOfIdx - base);
+    const extraTurns = 3;
+    setRotation(rotation + extraTurns * 360 + target);
 
-    const extraTurns = 2;
-    const target = rotationDeg + extraTurns * 360 + deltaToTop;
-
-    setRotationDeg(target);
-
-    const durationMs = 2200;
-    setTimeout(() => {
-      setSelected(idx);
-      setCircleColor(colors[idx % colors.length]);
-      setRotating(false);
-    }, durationMs);
+    setTimeout(() => setSelected(idx), 2500);
+    setTimeout(() => setRotating(false), 2500);
   };
 
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.code === "Space") {
-        e.preventDefault();
-        handleClick();
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  });
+  const removeSelected = () => {
+    if (selected === null) return;
+    const newWords = words.filter((_, i) => i !== selected);
+    setWords(newWords);
+    setSelected(null);
+  };
 
-  const radius = 160;
+  const resetAll = () => {
+    setWords([...categories[category].boxes]);
+    setSelected(null);
+    setRotation(0);
+  };
 
   return (
-    <div className=" container rounded-3" idPage={idPage}  style={{ display: "flex", gap: "20px", backgroundColor: " #ebf4dd99" }}>
-      {/* فهرست دسته‌ها */}
-        <div style={styles.sidebar}>
-          <h3 className="btn btn-success" onClick={()=>setShowListSun(!showListSun)}>دسته‌بندی‌ها</h3>
-      {showListSun && 
-          <ul>
-            {Object.keys(categories).map((cat) => (
-              <li key={cat} style={{ marginBottom: "10px" }}>
+    <div className="" style={{ padding: 20,height:"75vh", fontFamily: " Arial, sans-serif",background:"linear-gradient(135deg, #98ecf2ff, #aef2b7ff)" }}>
+      {/* دکمه نمایش/پنهان فهرست */}
+      <button
+        onClick={() => setShowList(!showList)}
+        style={{
+          padding: "8px 12px",
+          borderRadius: 8,
+          border: "none",
+          cursor: "pointer",
+          background: "#4caf50",
+          color: "#fff",
+          marginBottom: 12,
+        }}
+      >
+        {showList ? "پنهان کردن دسته‌ها" : "نمایش دسته‌ها"}
+      </button>
                 <button
-                  style={{
-                    padding: "8px 12px",
-                    borderRadius: "8px",
-                    border: "none",
-                    cursor: "pointer",
-                    background: category === cat ? "#4caf50" : "#ddd",
-                    color: category === cat ? "#fff" : "#000",
-                    width: "100%",
-                  }}
-                  onClick={() => {
-                    setCategory(cat);
-                    setWords(categories[cat].boxes);
-                    setCircleText(categories[cat].circle);
-                    setSelected(null);
-                    setRotationDeg(0);
-                    setFinished(false);
-                    setCircleColor("#ffd54f");
-                  }}
-                >
-                  {cat}
-                </button>
-              </li>
-            ))}
-          </ul>
-      }
-      </div>
-
-      {/* بخش اصلی */}
-      <div style={styles.wrap}>
-        <div
+          onClick={resetAll}
           style={{
-            ...styles.ring,
-            transform: `rotate(${rotationDeg}deg)`,
-            transition: rotating ? "transform 2.2s ease-out" : "none",
+            padding: "8px 12px",
+            borderRadius: 8,
+            border: "none",
+            cursor: "pointer",
+            background: "#607d8b",
+            color: "#fff",
+            marginLeft:"5px"
           }}
         >
-          {words.map((w, i) => {
-            const angle = (i / words.length) * 360;
-            const isSel = selected === i;
-
-            const baseTransform = `
-              rotate(${angle - 60}deg)
-              translate(${radius + 80}px , 220px)
-              rotate(150deg)
-            `;
-
-            const finalTransform = isSel
-              ? `${baseTransform}  translate(0,-18px) scale(2.5) `
-              : baseTransform;
-
-              if(isSel ) {  popSound.play()}
-            
-            return (
-              <div
-              id="hi"
-                key={i}
-                style={{
-                  ...styles.wordBox,
-                  background: colors[i % colors.length],
-                  ...(isSel ? styles.wordBoxSelected : {}),
-                  transform: finalTransform,
-                  opacity: selected !== null && !isSel ? 0.4 : 1,
-                }}
-              >
-                {w}
-              </div>
-            );
-          })}
+          ریست
+        </button>
+      {showList && (
+        <div style={{ marginBottom: 20, display: "flex", flexWrap: "wrap", gap: 10 }}>
+          {Object.keys(categories).map((cat) => (
+            <button
+              key={cat}
+              onClick={() => {
+                setCategory(cat);
+                setWords([...categories[cat].boxes]);
+                setCircleText(categories[cat].circle);
+                setSelected(null);
+                setRotation(0);
+              }}
+              style={{
+                padding: "8px 12px",
+                borderRadius: 8,
+                border: "none",
+                cursor: "pointer",
+                background: category === cat ? "#4caf50" : "#ddd",
+                color: category === cat ? "#fff" : "#000",
+              }}
+            >
+              {cat}
+            </button>
+          ))}
         </div>
+      )}
 
+      {/* 🔺 Arrow */}
+      {/* <div style={{ textAlign: "center", fontSize: 28, marginBottom: -8 }}>🔺</div> */}
+
+      {/* ☀️ Circle */}
+      <div
+        style={{
+          width: size,
+          height: size,
+          margin: "0 auto",
+          position: "relative",
+          touchAction: "manipulation",
+        }}
+      >
+        {words.map((w, i) => {
+          const step = 360 / words.length;
+          const angle = i * step + rotation;
+          const isSel = selected === i;
+
+          const translateY = isSel ? 0 : -radius; // Selected moves to center
+          const scale = isSel ? 2.8 : 1;          // Selected scales up
+          const fadeOthers = selected !== null && !isSel ? 0.35 : 1;
+          const boxWidth = Math.max(size * 0.12, w.length * 16);
+
+          return (
+            <div
+              // className="py-2 px-3"
+              key={i}
+              style={{
+                position: "absolute",
+                left: "38%",
+                top: "50%",
+                transform: `rotate(${angle}deg) translateY(${translateY}px) rotate(${-angle}deg) scale(${scale})`,
+                minWidth: boxWidth,
+                height: size * 0.16,
+                borderRadius: 16,
+                background: colors[i % colors.length],
+                color: "#fff",
+                fontSize: size * 0.05,
+                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0 6px 14px rgba(0,0,0,.2)",
+                transition: "transform 2.5s cubic-bezier(.2,.8,.2,1), opacity .6s",
+                opacity: fadeOthers,
+                transformOrigin: "center center",
+                zIndex: isSel ? 3 : 1,
+                textAlign: "center",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                // padding: "5px",
+              }}
+              onClick={removeSelected}
+            >
+              {w}
+            </div>
+          );
+        })}
+
+        {/* 🌕 Center Button */}
         <div
-          style={{ ...styles.center, background: circleColor }}
-          onClick={handleClick}
+          onClick={spin}
+          style={{
+            width: size * 0.30,
+            height: size * 0.30,
+            borderRadius: "50%",
+            background: "#FFD54F",
+            position: "absolute",
+            left: "46%",
+            top: "57%",
+            transform: "translate(-50%, -50%)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: size * 0.06,
+            fontWeight: 700,
+            cursor: "pointer",
+            userSelect: "none",
+            boxShadow: "0 8px 20px rgba(0,0,0,.25)",
+            touchAction: "manipulation",
+          }}
         >
-          {finished ? "آفرین! 🎉" : circleText}
+          بچرخان
         </div>
+      </div>
+
+      {/* دکمه‌های کنترل */}
+      <div style={{ marginTop: 20, display: "flex", justifyContent: "center", gap: 10, flexWrap: "wrap" }}>
+        {/* <button
+          onClick={removeSelected}
+          style={{
+            padding: "8px 12px",
+            borderRadius: 8,
+            border: "none",
+            cursor: "pointer",
+            background: "#ff5722",
+            color: "#fff",
+          }}
+        >
+          حذف واژه وسط
+        </button> */}
+
+
       </div>
     </div>
   );
 }
-
-const styles = {
-  wrap: {
-    width: 480,
-    height: 680,
-    position: "relative",
-    margin: "24px auto",
-    userSelect: "none",
-    fontFamily: "Tahoma, Arial, sans-serif",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  sidebar: {
-    width: "200px",
-    background: "#f9f9f9",
-    padding: "12px",
-    borderRadius: "12px",
-    fontFamily: "Tahoma",
-    fontSize: "14px",
-    boxShadow: "0 4px 12px rgba(0,0,0,.1)",
-  },
-  center: {
-    width: 160,
-    height: 160,
-    color: "#222",
-    borderRadius: "50%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: 28,
-    fontWeight: 700,
-    textAlign: "center",
-    position: "absolute",
-    cursor: "pointer",
-    zIndex: 3,
-    boxShadow: "0 6px 16px rgba(0,0,0,.15)",
-    left: "50%",
-    top: "50%",
-    transform: "translate(-50%, -50%)",
-    transition: "background .4s ease",
-    padding: "10px",
-  },
-  ring: {
-    position: "relative",
-    width: "100%",
-    height: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  wordBox: {
-    position: "absolute",
-    left: "50%",
-    top: "50%",
-    padding: "19px 14px",
-    borderRadius: 12,
-    fontSize: 20,
-    boxShadow: "0 4px 10px rgba(0,0,0,.12)",
-    transition: "transform .4s ease, background .3s ease, opacity .3s ease",
-    whiteSpace: "nowrap",
-    transformOrigin: "0 0",
-    color: "#fff",
-    fontWeight: 600,
-  },
-  wordBoxSelected: {
-    zIndex: 2,
-    transform: "scale(1.5)",
-  },
-};
