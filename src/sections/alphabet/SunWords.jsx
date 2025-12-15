@@ -16,7 +16,7 @@ export default function SunWordsSmooth() {
     "#009688", "#4caf50", "#ff9800", "#795548", "#607d8b"
   ];
 
-  const [category, setCategory] = useState("صداآ");
+  const [category, setCategory] = useState("صدا_ز");
   const [words, setWords] = useState([...categories[category].boxes]);
   const [circleText, setCircleText] = useState(categories[category].circle);
   const [selected, setSelected] = useState(null);

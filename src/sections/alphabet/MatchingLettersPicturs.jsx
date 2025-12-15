@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { nanoid } from "nanoid";
 
 /**
  * LetterMatch_PointerFix.jsx
@@ -12,31 +13,55 @@ import React, { useState, useRef, useEffect } from "react";
  */
 
 const dataSets = [
-   {
-  id: "alphabet",
-  title: "حروف الفبا",
-  items: [
-    { id: 1, word: "تُخمِ مُرغ", image: " https://static.vecteezy.com/system/resources/thumbnails/054/671/915/small/two-smiling-eggs-are-sitting-on-a-wooden-table-photo.jpg" },
-    { id: 2, word: "پَنگوئن", image: "https://static.vecteezy.com/system/resources/previews/044/864/382/non_2x/cute-winter-penguin-cartoon-drawing-vector.jpg " },
-    { id: 3, word: "بادکُنَک", image: "https://thumbs.dreamstime.com/b/cartoon-balloons-illustration-generative-ai-colorful-clipart-isolated-386381159.jpg" },
-    { id: 4, word: "اَنار", image: "https://thumbs.dreamstime.com/b/d-funny-cartoon-delicious-pomegranate-agriculture-fruit-ai-generated-d-funny-cartoon-delicious-pomegranate-304668331.jpg" },
+  //  {
+  // id: "alphabet",
+  // title: "حروف الفبا",
+  // items: [
+  //   { id: 1, word: "تُخمِ مُرغ", image: " https://static.vecteezy.com/system/resources/thumbnails/054/671/915/small/two-smiling-eggs-are-sitting-on-a-wooden-table-photo.jpg" },
+  //   { id: 2, word: "پَنگوئن", image: "https://static.vecteezy.com/system/resources/previews/044/864/382/non_2x/cute-winter-penguin-cartoon-drawing-vector.jpg " },
+  //   { id: 3, word: "بادکُنَک", image: "https://thumbs.dreamstime.com/b/cartoon-balloons-illustration-generative-ai-colorful-clipart-isolated-386381159.jpg" },
+  //   { id: 4, word: "اَنار", image: "https://thumbs.dreamstime.com/b/d-funny-cartoon-delicious-pomegranate-agriculture-fruit-ai-generated-d-funny-cartoon-delicious-pomegranate-304668331.jpg" },
 
-    { id: 5, word: "شُکُلات", image: "https://t4.ftcdn.net/jpg/04/68/67/91/360_F_468679123_DnRyA3qKZnmxXiJ932TnmpJPBCj8sLEQ.jpg " },
-    { id: 6, word: "سِتارِه", image: "https://thumbs.dreamstime.com/b/cartoon-star-smiling-face-featuring-large-expressive-eyes-cheerful-expression-flames-trail-behind-colored-shades-403930279.jpg " },
-    { id: 7, word: "رُز", image: " https://www.shutterstock.com/image-vector/rose-vector-on-white-background-600nw-2567441655.jpg" },
-    { id: 8, word: "دِرَخت", image: "https://png.pngtree.com/png-vector/20231023/ourmid/pngtree-tree-png-cartoon-tree-png-image_10312641.png " },
+  //   { id: 5, word: "شُکُلات", image: "https://t4.ftcdn.net/jpg/04/68/67/91/360_F_468679123_DnRyA3qKZnmxXiJ932TnmpJPBCj8sLEQ.jpg " },
+  //   { id: 6, word: "سِتارِه", image: "https://thumbs.dreamstime.com/b/cartoon-star-smiling-face-featuring-large-expressive-eyes-cheerful-expression-flames-trail-behind-colored-shades-403930279.jpg " },
+  //   { id: 7, word: "رُز", image: " https://www.shutterstock.com/image-vector/rose-vector-on-white-background-600nw-2567441655.jpg" },
+  //   { id: 8, word: "دِرَخت", image: "https://png.pngtree.com/png-vector/20231023/ourmid/pngtree-tree-png-cartoon-tree-png-image_10312641.png " },
 
-    { id: 9, word: "نان", image: "https://as2.ftcdn.net/jpg/06/07/77/33/1000_F_607773312_lAuuRIgHldmjunLUJWq0VDxngKD9aZ39.jpg " },
-    { id: 10, word: "لِباس", image: "https://img.freepik.com/free-vector/set-clothes-isolated_1308-133273.jpg " },
-    { id: 11, word: "مورچِه", image: " https://t4.ftcdn.net/jpg/16/42/81/11/360_F_1642811110_JwEPZq9nBV4LPAptrmobcCHpIi6VbP7X.jpg" },
-    { id: 12, word: "کَلید", image: "https://previews.123rf.com/images/nikiteev/nikiteev1609/nikiteev160901271/62689032-vector-cartoon-bunch-of-modern-keys-on-white-background.jpg" },
+  //   { id: 9, word: "نان", image: "https://as2.ftcdn.net/jpg/06/07/77/33/1000_F_607773312_lAuuRIgHldmjunLUJWq0VDxngKD9aZ39.jpg " },
+  //   { id: 10, word: "لِباس", image: "https://img.freepik.com/free-vector/set-clothes-isolated_1308-133273.jpg " },
+  //   { id: 11, word: "مورچِه", image: " https://t4.ftcdn.net/jpg/16/42/81/11/360_F_1642811110_JwEPZq9nBV4LPAptrmobcCHpIi6VbP7X.jpg" },
+  //   { id: 12, word: "کَلید", image: "https://previews.123rf.com/images/nikiteev/nikiteev1609/nikiteev160901271/62689032-vector-cartoon-bunch-of-modern-keys-on-white-background.jpg" },
 
-    { id:13 , word: "لاک پُشت", image: "https://media.istockphoto.com/id/1291924147/vector/vector-cute-turtle-cartoon-character.jpg?s=170667a&w=0&k=20&c=ucrjh5hNpBEL6fPHnO89X2UjkMQwmks-s5a_jD6-etE=" },
-    { id: 14, word: "مار", image: "https://thumbs.dreamstime.com/b/d-cartoon-snake-vibrant-scales-friendly-expression-white-background-356297574.jpg" },
-    { id: 15, word: "شیر", image: "https://static.vecteezy.com/system/resources/previews/007/270/750/non_2x/cartoon-milk-box-holding-a-glass-of-milk-vector.jpg" },
-    { id:16 , word: "راست", image: "https://static.vecteezy.com/system/resources/previews/012/941/604/non_2x/cartoon-little-boy-pointing-to-his-right-with-the-right-word-vector.jpg" },
-  ],
-},
+  //   { id:13 , word: "لاک پُشت", image: "https://media.istockphoto.com/id/1291924147/vector/vector-cute-turtle-cartoon-character.jpg?s=170667a&w=0&k=20&c=ucrjh5hNpBEL6fPHnO89X2UjkMQwmks-s5a_jD6-etE=" },
+  //   { id: 14, word: "مار", image: "https://thumbs.dreamstime.com/b/d-cartoon-snake-vibrant-scales-friendly-expression-white-background-356297574.jpg" },
+  //   { id: 15, word: "شیر", image: "https://static.vecteezy.com/system/resources/previews/007/270/750/non_2x/cartoon-milk-box-holding-a-glass-of-milk-vector.jpg" },
+  //   { id:16 , word: "راست", image: "https://static.vecteezy.com/system/resources/previews/012/941/604/non_2x/cartoon-little-boy-pointing-to-his-right-with-the-right-word-vector.jpg" },
+  // ],
+  // },
+  {
+    id: "homeTools",
+    title: "وسایل خانه",
+items: [
+  { id: nanoid(), word: "صَندَلی", image: "https://img.freepik.com/premium-vector/vector-cartoon-wooden-chair-white_756535-6813.jpg?semt=ais_incoming&w=740&q=80" },
+  { id: nanoid(), word: "میز", image: "https://icon2.cleanpng.com/lnd/20250213/t/6c1d397b11d4f63fa09dc2904c5c75.webp" },
+  { id: nanoid(), word: "کاناپه", image: "https://thumbs.dreamstime.com/b/cartoon-couch-smiling-face-brown-orange-polka-dots-three-colorful-cushions-rest-yellow-one-smiley-red-bear-blue-368037647.jpg" },
+  { id: nanoid(), word: "تَخت", image: "https://t4.ftcdn.net/jpg/00/89/35/35/360_F_89353593_1gvsjf4dyoxIzhyR31uh0l5ifJ4T3WHv.jpg" },
+  { id: nanoid(), word: "چِراغ", image: "https://i.pinimg.com/564x/2f/9f/69/2f9f69bb1b33e6e6bc0b561107dac5fc.jpg" },
+  { id: nanoid(), word: "ساعَت", image: "https://img.freepik.com/premium-vector/cartoon-icon-illustration-colorful-animated-alarm-clock_1263357-22214.jpg" },
+  { id: nanoid(), word: "فَرش", image: "https://static.vecteezy.com/system/resources/previews/067/222/602/non_2x/hand-drawn-cartoon-illustration-of-a-carpet-free-png.png" },
+  { id: nanoid(), word: "آیِنه", image: "https://c0.klipartz.com/pngpicture/666/751/sticker-png-drawing-%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D0%A4%D0%BE%D1%82%D0%BA%D0%B8-others-albom-mirror-cartoon-picture-frame-%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D1%84%D0%BE%D1%82%D0%BA%D0%B8.png" },
+  { id: nanoid(), word: "بالِشت", image: "https://www.shutterstock.com/image-vector/cozy-home-interior-pillows-textile-260nw-2479600727.jpg" },
+  { id: nanoid(), word: "پَتو", image: "https://png.pngtree.com/png-clipart/20230930/original/pngtree-folded-blanket-doodle-png-image_13023864.png" },
+  { id: nanoid(), word: "پَردِه", image: "https://thumbs.dreamstime.com/b/red-theatre-curtain-3515194.jpg" },
+  { id: nanoid(), word: "تِلویزیون", image: "https://img.freepik.com/premium-photo/flat-screen-tv-with-cartoon-characters-it_1257811-9723.jpg" },
+  { id: nanoid(), word: "یَخچال", image: "https://as1.ftcdn.net/jpg/01/06/76/72/1000_F_106767219_GNtr1M0AYhZcr5jBdMkqRnPycNzQn1Fu.jpg" },
+  { id: nanoid(), word: "اُجاق", image: "https://img.freepik.com/premium-vector/cartoon-image-stove-with-red-top_858664-28651.jpg" },
+  { id: nanoid(), word: "ماشینِ لِباسشویی", image: "https://t3.ftcdn.net/jpg/15/38/32/70/360_F_1538327025_qQfiuRB6nzpDYSPofY4fVUq8jbYqDj5u.jpg" },
+]
+
+
+  },
+
   // {
   //   id: "animals",
   //   title: "حیوانات",
@@ -323,7 +348,7 @@ export default function MatchingLettersPicturs() {
 
   // ---------- render ----------
   return (
-    <div className="letter-match container py-3" dir="rtl">
+    <div className="letter-match container bg-info py-3" dir="rtl">
       <style>{`
         .letter-match { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
         .panel-row { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
