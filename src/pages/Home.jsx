@@ -27,7 +27,7 @@ export default function Home() {
     /> */}
         {/* <WordFlipBox/> */}
       {/* <SpellingGame/> */}
-      <MatchingLettersPicturs/>
+      {/* <MatchingLettersPicturs/> */}
     <CardAlphaCompo/> 
     <div className="my-4">
       <h4 className="my-4 text-center bg-info p-3 rounded">صداهای کوتاه</h4>

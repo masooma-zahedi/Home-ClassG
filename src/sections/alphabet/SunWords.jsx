@@ -68,7 +68,7 @@ export default function SunWordsSmooth() {
   };
 
   return (
-    <div className="" style={{ padding: 20,height:"75vh", fontFamily: " Arial, sans-serif",background:"linear-gradient(135deg, #98ecf2ff, #aef2b7ff)" }}>
+    <div className="h-75 h-md-100 h-lg-75 pb-5" style={{ padding: 20,height:"", fontFamily: " Arial, sans-serif",background:"linear-gradient(135deg, #98ecf2ff, #aef2b7ff)" }}>
       {/* دکمه نمایش/پنهان فهرست */}
       <button
         onClick={() => setShowList(!showList)}
