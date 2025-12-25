@@ -17,8 +17,8 @@ export default function Home() {
   return (<>
   <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها کلمات زیر را بخوانند و از روی آن یکبار بنویسند.   </h4>
       {/* <BrokenGlass/>   */}
-      <SunWords />
       <SylabeWords/>
+      <SunWords />
       {/* <ObjectSentenceGame/> */}
     {/* <VideoCard
       title="قصه کوتاه امروز"
