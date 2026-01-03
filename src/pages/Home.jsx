@@ -18,8 +18,8 @@ export default function Home() {
   <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها کلمات زیر را بخوانند و از روی آن یکبار بنویسند.   </h4>
       {/* <BrokenGlass/>   */}
       <SylabeWords/>
-      <SunWords />
-      {/* <ObjectSentenceGame/> */}
+      {/* <SunWords /> */}
+      <ObjectSentenceGame/>
     {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
