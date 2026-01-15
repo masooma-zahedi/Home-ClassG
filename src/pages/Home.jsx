@@ -15,19 +15,21 @@ import SunWords from "../sections/alphabet/SunWords";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها کلمات زیر را بخوانند و از روی آن یکبار بنویسند.   </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف ج را یاد گرفتند کلمات زیر را بخوانند و از روی آن یک بار بنویسند. باهم بخوانیم را بخوانند و همین طور فارسی فیلم زیر را یاد بگیرند.   </h4>
       {/* <BrokenGlass/>   */}
-      <SylabeWords/>
       {/* <SunWords /> */}
-      <ObjectSentenceGame/>
-    {/* <VideoCard
+      {/* <ObjectSentenceGame/> */}
+      <BouncingBalls/>
+      <SylabeWords/>
+    <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
-      videoFileName={`${process.env.PUBLIC_URL}/video/bigThings.mp4`}  // فقط اسم فایل ویدیوی mp4
-    /> */}
+      videoFileName={`${process.env.PUBLIC_URL}/video/big&big.mp4`}  // فقط اسم فایل ویدیوی mp4
+    />
         {/* <WordFlipBox/> */}
       {/* <SpellingGame/> */}
       {/* <MatchingLettersPicturs/> */}
+
     <CardAlphaCompo/> 
     <div className="my-4">
       <h4 className="my-4 text-center bg-info p-3 rounded">صداهای کوتاه</h4>
@@ -41,7 +43,6 @@ export default function Home() {
 
     {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}
     {/* <WordCardsSingle/> */}   
-     {/* <BouncingBalls/> */}
 
   </>)
 }

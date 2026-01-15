@@ -25,6 +25,15 @@ export const SylabeWords = () => {
       titleColor: "rgba(58, 210, 111, 1)",
       sylabelBg: "rgba(36, 190, 190, 1)",
       sentenceRow: [
+                [ { word:"او", syla:"" }, { word:"توت", syla:"" }, { word:"داد.", syla:"" } ],
+        [ { word:"دوستَم", syla:"دوس + تَم" }, { word:"با", syla:"" }, { word:"سام", syla:"" }, { word:"دَست", syla:"" }, { word:"داد.", syla:"" } ],
+        [ { word:"او", syla:"" }, { word:"تاب", syla:"" }, { word:"بَست.", syla:"" } ],
+        [ { word:"او", syla:"" }, { word:"با", syla:"" }, { word:"اَسَد", syla:"اَ + سَد" }, { word:"دَست", syla:"" }, { word:"داد.", syla:"" } ],
+        // [ { word:"سام", syla:"" }, { word:"تاب", syla:"" }, { word:"بَست.", syla:"" } ],
+        // [ { word:"سام", syla:"" }, { word:"با", syla:"" }, { word:"اَسَد", syla:"اَ + سَد" }, { word:"دوست", syla:"" }, { word:"اَست.", syla:"" } ],
+        // [ { word:"سَبا", syla:"" }, { word:"با", syla:"" }, { word:"سوت", syla:"" }, { word:"آمَد.", syla:"آ + مَد" } ],
+        // [ { word:"او", syla:"" }, { word:"ماست", syla:"" }, { word:"داد.", syla:"" } ],
+
         // [{ word: "بابا", syla: "با + با" }, { word: "سوپ", syla: "سوپ " }, { word: "داد.", syla: "داد" }],
         // [{ word: "بابا", syla: "با + با" }, { word: "توپ", syla: "توپ" }, { word: "داد.", syla: "داد" }],
         // [{ word: "مادَر", syla: "ما + دَر" }, { word: "آب", syla: "آب" }, { word: "داد.", syla: "داد" }],
@@ -97,33 +106,33 @@ export const SylabeWords = () => {
 
         //  صدای کشیده ی 
         
-        [
-          { word: "سیب", syla: "سی + ب" },
-          { word: "شیر", syla: "شی + ر" }
-        ],
-        [
-          { word: "دیر", syla: "دی + ر" },
-          { word: "پیر", syla: "پی + ر" },
-          { word: "سیر", syla: "سی + ر" },
-          { word: "تیر", syla: "تی + ر" }
-        ],
-        [
-          { word: "گیر", syla: "گی + ر" },
-          { word: "میر", syla: "می + ر" },
-          { word: "میل", syla: "می + ل" },
-          { word: "ریش", syla: "ری + ش" }
-        ],
-        [
-          { word: "دیل", syla: "دی + ل" },
-          { word: "بیل", syla: "بی + ل" },
-          { word: "نیز", syla: "نی + ز" },
-          { word: "نیر", syla: "نی + ر" }
-        ],
-        [
-          { word: "کیل", syla: "کی + ل" },
-          { word: "میر", syla: "می + ر" },
-          { word: "میل", syla: "می + ل" }
-        ]
+        // [
+        //   { word: "سیب", syla: "سی + ب" },
+        //   { word: "شیر", syla: "شی + ر" }
+        // ],
+        // [
+        //   { word: "دیر", syla: "دی + ر" },
+        //   { word: "پیر", syla: "پی + ر" },
+        //   { word: "سیر", syla: "سی + ر" },
+        //   { word: "تیر", syla: "تی + ر" }
+        // ],
+        // [
+        //   { word: "گیر", syla: "گی + ر" },
+        //   { word: "میر", syla: "می + ر" },
+        //   { word: "میل", syla: "می + ل" },
+        //   { word: "ریش", syla: "ری + ش" }
+        // ],
+        // [
+        //   { word: "دیل", syla: "دی + ل" },
+        //   { word: "بیل", syla: "بی + ل" },
+        //   { word: "نیز", syla: "نی + ز" },
+        //   { word: "نیر", syla: "نی + ر" }
+        // ],
+        // [
+        //   { word: "کیل", syla: "کی + ل" },
+        //   { word: "میر", syla: "می + ر" },
+        //   { word: "میل", syla: "می + ل" }
+        // ]
 
 
 

@@ -57,17 +57,17 @@ export let infoCard = [
     //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ث-long-1.jpg`,
     //     longSoundId:"longTh1"
     // },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ج-30-10-1.jpg`,
-    //     title:"حرف ج",
-    //     picFinger:`https://t4.ftcdn.net/jpg/15/49/11/97/360_F_1549119739_0nvAXTj56TCer4oGGIyZ62Id2odKbPrK.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ج-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ج-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ج-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ج-4.png`,],
-    //     examplePicId:"exampleL-J1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ج-03-10-2.jpg`,
-    //     shortSoundId:"letterj1",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ج-long-1.jpg`,
-    //     longSoundId:"letterj2"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ج-30-10-1.jpg`,
+        title:"حرف ج",
+        picFinger:`https://t4.ftcdn.net/jpg/15/49/11/97/360_F_1549119739_0nvAXTj56TCer4oGGIyZ62Id2odKbPrK.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ج-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ج-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ج-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ج-4.png`,],
+        examplePicId:"exampleL-J1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ج-03-10-2.jpg`,
+        shortSoundId:"letterj1",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ج-long-1.jpg`,
+        longSoundId:"letterj2"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-چ-1.jpg`,
     //     title:"حرف چ",
