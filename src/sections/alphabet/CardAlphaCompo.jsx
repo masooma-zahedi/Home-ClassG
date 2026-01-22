@@ -46,17 +46,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ت-long-1.jpg`,
         longSoundId:"longT1"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ث-03-10-1.jpg`,
-    //     title:"حرف ث",
-    //     picFinger:`https://img.pikbest.com/backgrounds/20250503/3d-happy-golden-money-bag-full-of-money-cartoon-illustration_11696168.jpg!w700wp`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ث-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ث-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ث-3.png`,],
-    //     examplePicId:"examTh1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/03-10-5-ث.jpg`,
-    //     shortSoundId:"shortTh1",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ث-long-1.jpg`,
-    //     longSoundId:"longTh1"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ث-03-10-1.jpg`,
+        title:"حرف ث",
+        picFinger:`https://img.pikbest.com/backgrounds/20250503/3d-happy-golden-money-bag-full-of-money-cartoon-illustration_11696168.jpg!w700wp`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ث-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ث-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ث-3.png`,],
+        examplePicId:"examTh1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/03-10-5-ث.jpg`,
+        shortSoundId:"shortTh1",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ث-long-1.jpg`,
+        longSoundId:"longTh1"
+    },
     {
         mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ج-30-10-1.jpg`,
         title:"حرف ج",

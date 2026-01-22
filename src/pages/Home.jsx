@@ -15,17 +15,17 @@ import SunWords from "../sections/alphabet/SunWords";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف ج را یاد گرفتند کلمات زیر را بخوانند و از روی آن یک بار بنویسند. باهم بخوانیم را بخوانند و همین طور فارسی فیلم زیر را یاد بگیرند.   </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف ث را یاد گرفتند. لطفا با بچه ها تمرین کنید تا جملات زیر را بخوانند و از روی 5 جمله آن بنویسند.   </h4>
       {/* <BrokenGlass/>   */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
-      <BouncingBalls/>
+      {/* <BouncingBalls/> */}
       <SylabeWords/>
-    <VideoCard
+    {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
       videoFileName={`${process.env.PUBLIC_URL}/video/big&big.mp4`}  // فقط اسم فایل ویدیوی mp4
-    />
+    /> */}
         {/* <WordFlipBox/> */}
       {/* <SpellingGame/> */}
       {/* <MatchingLettersPicturs/> */}
