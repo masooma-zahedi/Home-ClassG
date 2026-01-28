@@ -134,40 +134,19 @@ export const SylabeWords = () => {
         //   { word: "میل", syla: "می + ل" }
         // ]
       // ],
-      sentenceRow : [
-  [
-    {word:"بابا", syla:"با+با"},
-    {word:"نان", syla:"نا + ن"},
-    {word:"داد.", syla:"دا+د"}
-  ],
-  [
-    {word:"مادَر", syla:"ما+دَر"},
-    {word:"نان", syla:"نا+ن"},
-    {word:"می پَزَد.", syla:"می + پَ + زَد"}
-  ],
-  [
-    {word:"پِسَر", syla:"پِ+سَر"},
-    {word:"نان", syla:"نا+ن"},
-    {word:"دارَد.", syla:"دا+رَد"}
-  ],
-  [
-    {word:"مادَر", syla:"ما+دَر"},
-    {word:"شاد", syla:"شا+د"},
-    {word:"اَست.", syla:"اَس + ت"}
-  ],
-  [
-    {word:"بابا", syla:"با+با"},
-    {word:"کار", syla:"کا+ر"},
-    {word:"دارَد.", syla:"دا+رَد"}
-  ],
-          [{ word: "شَب", syla: "شَب" }, { word: "آرام", syla: "آ + رام" }, { word: "است.", syla: "اَست" }],
-        [{ word: "بابا", syla: "با + با" }, { word: "با", syla: "با" }, { word: "او", syla: "او" },{ word: "آمَد", syla: "آ + مَد" }],
-        [{word:"اَسَد",syla:"اَ+سَد"},{word:"با",syla:""},{word:"اَسب",syla:"اَسب"},{word:"آمَد.",syla:"آ+مَد"}],
-        [{word:"داماد",syla:"دا+ماد"},{word:"با",syla:""},{word:"اَدَب",syla:"اَ+دَب"},{word:"آمَد.",syla:"آ+مَد"}],
-        [{word:"سام",syla:"سام"},{word:"ماست",syla:"ماست"},{word:"داد.",syla:"داد"}],
-        [{word:"بابا",syla:"با+با"},{word:"با",syla:""},{word:"داس",syla:"داس"},{word:"آمَد.",syla:"آ+مَد"}],
-
-]
+      sentenceRow: [
+          [{word:"مَن",syla:""},{word:"چای",syla:"چا+ی"},{word:"دارَم",syla:"دا+رَم"}],
+          [{word:"ایـن",syla:""},{word:"چوب",syla:"چو+ب"},{word:"اَست",syla:"اَس+ت"}],
+          [{word:"چَتر",syla:"چَت+ر"},{word:"مَن",syla:"مَ+ن"},{word:"آبی",syla:"آ+بی"},{word:"اَست",syla:"اَ+ست"}],
+          [{word:"چَمَن",syla:"چَ+مَن"},{word:"سَبز",syla:"سَب+ز"},{word:"است",syla:"اَس+ت"}],
+          [{word:"چَسب",syla:"چَس+ب"},{word:"روی",syla:"رو+یِ"},{word:"میـز",syla:"می+ز"},{word:"اَست",syla:"اَس+ت"}],
+          [{word:"تو",syla:"تو"},{word:"بِه",syla:"بِ+ه"},{word:"چَپ",syla:"چَ+پ"},{word:"بُرو",syla:"بُ+رو"}],
+          [{word:"ایـن",syla:"ای+ن"},{word:"چی",syla:"چی"},{word:"اَست",syla:"اَ+ست"}],
+          [{word:"سیب",syla:"سی+ب"},{word:"را",syla:"را"},{word:"بِچین",syla:"بِ+چین"}],
+          [{word:"مادَر",syla:"ما+دَر"},{word:"چادُر",syla:"چا+دُر"},{word:"دارَد",syla:"د+ا+رَد"}],
+          [{word:"چِشم",syla:"چِ+شم"},{word:"مَن",syla:"مَ+ن"},{word:"سالِم",syla:"سا+لِم"},{word:"اَست",syla:"اَ+ست"}],
+          [{word:"او",syla:"او"},{word:"چِشمَک",syla:"چِش+مَک"},{word:"زَد",syla:"زَ+د"}]
+        ],
 
     },
 
