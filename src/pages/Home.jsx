@@ -15,7 +15,7 @@ import SunWords from "../sections/alphabet/SunWords";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف چ را یاد گرفتند و جملات زیر را با آنها تمرین کنید و  از روی 5 جمله آن بنویسند.   </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف چ را یاد گرفتند و جملات زیر را با آنها تمرین کنید و  از روی 4 جمله آن بنویسند.   </h4>
       {/* <BrokenGlass/>   */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
