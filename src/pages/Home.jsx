@@ -12,15 +12,16 @@ import WordFlipBox from "../sections/alphabet/WordFlipBox";
 import SpellingGame from "../sections/alphabet/SpellingGame";
 import MatchingLettersPicturs from "../sections/alphabet/MatchingLettersPicturs";
 import SunWords from "../sections/alphabet/SunWords";
+import SentenceObject from "../sections/word/SentenceObject";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف چ را یاد گرفتند و جملات زیر را با آنها تمرین کنید و  از روی 4 جمله آن بنویسند.   </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها جملات زیر را تمرین کنند و  از روی 4 جمله آن بنویسند.   </h4>
       {/* <BrokenGlass/>   */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
-      <SylabeWords/>
+      {/* <SylabeWords/> */}
     {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
@@ -29,6 +30,7 @@ export default function Home() {
         {/* <WordFlipBox/> */}
       {/* <SpellingGame/> */}
       {/* <MatchingLettersPicturs/> */}
+      <SentenceObject/>
 
     <CardAlphaCompo/> 
     <div className="my-4">
