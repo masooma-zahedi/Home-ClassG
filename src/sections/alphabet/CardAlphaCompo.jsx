@@ -145,17 +145,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ز-long-1.jpg`,
         longSoundId:"letterZ1-2"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ژ-1.jpg`,
-    //     title:"حرف ژ ",
-    //     picFinger:`https://static.vecteezy.com/system/resources/thumbnails/035/790/036/small_2x/jelly-kept-on-a-plate-illustration-vector.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-4.png`,],
-    //     examplePicId:"exampleZh-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/1-05-13-ژ-Short.jpg`,
-    //     shortSoundId:"letterZh-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ژ-long.jpg`,
-    //     longSoundId:"letterZh-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ژ-1.jpg`,
+        title:"حرف ژ ",
+        picFinger:`https://static.vecteezy.com/system/resources/thumbnails/035/790/036/small_2x/jelly-kept-on-a-plate-illustration-vector.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-4.png`,],
+        examplePicId:"exampleZh-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/1-05-13-ژ-Short.jpg`,
+        shortSoundId:"letterZh-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ژ-long.jpg`,
+        longSoundId:"letterZh-3"
+    },
     {
         mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/05-10-24-س-2.jpg`,
         title:"حرف س ",
