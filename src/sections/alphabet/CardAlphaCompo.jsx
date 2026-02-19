@@ -79,17 +79,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-چ-long.jpg`,
         longSoundId:"letterCh-2"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ح-03-10-1.jpg`,
-    //     title:"حرف ح",
-    //     picFinger:`https://png.pngtree.com/png-clipart/20241214/original/pngtree-happy-snail-cartoon-png-image_17858707.png`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-4.png`,],
-    //     examplePicId:"exampleL-H1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ح-03-10-2.jpg`,
-    //     shortSoundId:"letterH1-1",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ح-long-2.jpg`,
-    //     longSoundId:"letterH1-2"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ح-03-10-1.jpg`,
+        title:"حرف ح",
+        picFinger:`https://png.pngtree.com/png-clipart/20241214/original/pngtree-happy-snail-cartoon-png-image_17858707.png`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-4.png`,],
+        examplePicId:"exampleL-H1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ح-03-10-2.jpg`,
+        shortSoundId:"letterH1-1",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ح-long-2.jpg`,
+        longSoundId:"letterH1-2"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/خ-03-10-1.jpg`,
     //     title:"حرف خ ",

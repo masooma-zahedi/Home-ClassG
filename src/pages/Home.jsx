@@ -16,8 +16,8 @@ import SentenceObject from "../sections/word/SentenceObject";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف ژ را یاد گرفتند، از روی حروف الفبا 3 بار بنویسند و حروف الفبا را یاد بگیرند..   </h4>
-      {/* <BrokenGlass/>   */}
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف "ح " را یاد گرفتند ، بچه ها از روی کلمات زیر بخوانند و از روی 10 کلمه آن بنویسند،    </h4>
+      <BrokenGlass/>  
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
@@ -31,7 +31,7 @@ export default function Home() {
       {/* <SpellingGame/> */}
       {/* <MatchingLettersPicturs/> */}
       <CardAlphaCompo/> 
-      <SentenceObject/>
+      {/* <SentenceObject/> */}
 
     <div className="my-4">
       <h4 className="my-4 text-center bg-info p-3 rounded">صداهای کوتاه</h4>
