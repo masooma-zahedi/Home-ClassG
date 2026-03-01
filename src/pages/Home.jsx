@@ -16,12 +16,12 @@ import SentenceObject from "../sections/word/SentenceObject";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف "ح " را یاد گرفتند ، بچه ها از روی کلمات زیر بخوانند و از روی 10 کلمه آن بنویسند،    </h4>
-      <BrokenGlass/>  
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها جملات زیر را بخوانند و از روی آن یک بار بنویسند.    </h4>
+      {/* <BrokenGlass/>   */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
-      {/* <SylabeWords/> */}
+      <SylabeWords/>
     {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
