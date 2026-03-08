@@ -135,9 +135,9 @@ export const SylabeWords = () => {
         // ]
       // ],
       sentenceRow: [
-        [{word:"آسِمان",syla:"آ+سِ+مان"},{word:"اَبر",syla:""},{word:"دارَد.",syla:"دا+رَد"}],
-        [{word:"تو",syla:""},{word:"دَر",syla:""},{word:"سَبَد",syla:"سَ+بَد"},{word:"توت",syla:""},{word:"داری.",syla:"دا+ری"}],
-        [{word:"سارا",syla:"سا+را"},{word:"با",syla:""},{word:"اَدَب",syla:"اَ+دَب"},{word:"اَست.",syla:""}],
+        // [{word:"آسِمان",syla:"آ+سِ+مان"},{word:"اَبر",syla:""},{word:"دارَد.",syla:"دا+رَد"}],
+        // [{word:"تو",syla:""},{word:"دَر",syla:""},{word:"سَبَد",syla:"سَ+بَد"},{word:"توت",syla:""},{word:"داری.",syla:"دا+ری"}],
+        // [{word:"سارا",syla:"سا+را"},{word:"با",syla:""},{word:"اَدَب",syla:"اَ+دَب"},{word:"اَست.",syla:""}],
           // [{word:"مَن",syla:""},{word:"چای",syla:"چا+ی"},{word:"دارَم",syla:"دا+رَم"}],
           // [{word:"ایـن",syla:""},{word:"چوب",syla:"چو+ب"},{word:"اَست",syla:"اَس+ت"}],
           // [{word:"چَتر",syla:"چَت+ر"},{word:"مَن",syla:"مَ+ن"},{word:"آبی",syla:"آ+بی"},{word:"اَست",syla:"اَ+ست"}],
@@ -149,6 +149,12 @@ export const SylabeWords = () => {
           // [{word:"مادَر",syla:"ما+دَر"},{word:"چادُر",syla:"چا+دُر"},{word:"دارَد",syla:"د+ا+رَد"}],
           // [{word:"چِشم",syla:"چِ+شم"},{word:"مَن",syla:"مَ+ن"},{word:"سالِم",syla:"سا+لِم"},{word:"اَست",syla:"اَ+ست"}],
           // [{word:"او",syla:"او"},{word:"چِشمَک",syla:"چِش+مَک"},{word:"زَد",syla:"زَ+د"}]
+         [{ word: "بابا", syla: "با + با" }, { word: "سوپ", syla: "سوپ " }, { word: "داد.", syla: "داد" }],
+        [{ word: "بابا", syla: "با + با" }, { word: "توپ", syla: "توپ" }, { word: "داد.", syla: "داد" }],
+        [{ word: "مادَر", syla: "ما + دَر" }, { word: "آب", syla: "آب" }, { word: "داد.", syla: "داد" }],
+        [{ word: "بابَک", syla: "با + بَک" }, { word: "شاد", syla: "شاد" }, { word: "اَست.", syla: "اَست" }],
+        // [{ word: "مَت", syla: "مَت" }, { word: "پَد", syla: "پَد" }, { word: "داد.", syla: "داد" }],
+
         ],
 
     },

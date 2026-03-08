@@ -22,6 +22,8 @@ export default function Home() {
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
       <SylabeWords/>
+      <WordGameWithCategories initialCategory="فروشگاه" />
+
     {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
@@ -43,7 +45,6 @@ export default function Home() {
     <CarouselAlphaExp idCarouselAlpha="longhref1"  dataCarousel="alphaLongCrousel"/>
     </div>
 
-    {/* <WordGameWithCategories initialCategory="وسایل مدرسه" /> */}
     {/* <WordCardsSingle/> */}   
 
   </>)
