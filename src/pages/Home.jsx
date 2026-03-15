@@ -17,11 +17,11 @@ import SentenceObject from "../sections/word/SentenceObject";
 export default function Home() {
   return (<>
   <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها جملات زیر را بخوانند و از روی آن یک بار بنویسند.    </h4>
-      {/* <BrokenGlass/>   */}
+      <BrokenGlass/>  
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
-      <SylabeWords/>
+      {/* <SylabeWords/> */}
       <WordGameWithCategories initialCategory="فروشگاه" />
 
     {/* <VideoCard
