@@ -90,17 +90,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/ح-long-2.jpg`,
         longSoundId:"letterH1-2"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/خ-03-10-1.jpg`,
-    //     title:"حرف خ ",
-    //     picFinger:`https://i.pinimg.com/474x/3d/25/af/3d25afac463d2a3d13c10d66667ab1d8.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-4.png`,],
-    //     examplePicId:"exampleL-Kh1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/خ-03-10-2.jpg`,
-    //     shortSoundId:"letterKH-1",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/خ-long-1.jpg`,
-    //     longSoundId:"letterKH-2"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/خ-03-10-1.jpg`,
+        title:"حرف خ ",
+        picFinger:`https://i.pinimg.com/474x/3d/25/af/3d25afac463d2a3d13c10d66667ab1d8.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-1.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-2.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-3.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-4.png`,],
+        examplePicId:"exampleL-Kh1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/خ-03-10-2.jpg`,
+        shortSoundId:"letterKH-1",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/خ-long-1.jpg`,
+        longSoundId:"letterKH-2"
+    },
     {
         mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/د-30-10-1.jpg`,
         title:"حرف د ",
