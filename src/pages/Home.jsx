@@ -13,17 +13,18 @@ import SpellingGame from "../sections/alphabet/SpellingGame";
 import MatchingLettersPicturs from "../sections/alphabet/MatchingLettersPicturs";
 import SunWords from "../sections/alphabet/SunWords";
 import SentenceObject from "../sections/word/SentenceObject";
+import StoryPage3 from "../sections/story/StoryPage3";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها جملات زیر را بخوانند و از روی آن یک بار بنویسند.    </h4>
-      <BrokenGlass/>  
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف ذ را یاد گرفتند. و داستان زیر را فقط خط اول آن را بخوانند و از روی آن 4 بار بنویسند.    </h4>
+      {/* <BrokenGlass/>   */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
       {/* <SylabeWords/> */}
-      <WordGameWithCategories initialCategory="فروشگاه" />
-
+      {/* <WordGameWithCategories initialCategory="فروشگاه" /> */}
+        <StoryPage3 groupKey="alefba" wantedTitle="پِدَر وَ سَبَد"/>
     {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
