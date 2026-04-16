@@ -244,17 +244,17 @@ export let infoCard = [
     //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-غ-long.jpg`,
     //     longSoundId:"letterGhain-3"
     // },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ف.jpg`,
-    //     title:"حرف ف ",
-    //     picFinger:`https://img.freepik.com/free-photo/kids-playing-soccer-cartoon_23-2151451231.jpg?semt=ais_incoming&w=740&q=80`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ف.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ف.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ف.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ف.png`,],
-    //     examplePicId:"exampleFa-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-2-ف-short.jpg`,
-    //     shortSoundId:"letterFa-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ف-long.jpg`,
-    //     longSoundId:"letterFa-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ف.jpg`,
+        title:"حرف ف ",
+        picFinger:`https://img.freepik.com/free-photo/kids-playing-soccer-cartoon_23-2151451231.jpg?semt=ais_incoming&w=740&q=80`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ف.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ف.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ف.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ف.png`,],
+        examplePicId:"exampleFa-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-2-ف-short.jpg`,
+        shortSoundId:"letterFa-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ف-long.jpg`,
+        longSoundId:"letterFa-3"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ق.jpg`,
     //     title:"حرف ق ",
