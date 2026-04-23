@@ -18,7 +18,7 @@ import StoryPage3 from "../sections/story/StoryPage3";
 export default function Home() {
   return (<>
   <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف ف را یاد گرفتند . بچه ها داستان زیر را فقط 2 خط پایین عکس بخوانند و از روی آن یک بار بنویسند.    </h4>
-      {/* <BrokenGlass/>   */}
+      <BrokenGlass/>  
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
