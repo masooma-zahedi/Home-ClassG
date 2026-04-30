@@ -277,17 +277,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ک-long.jpg`,
         longSoundId:"letterKaf-3"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-1-گ.jpg`,
-    //     title:"حرف گ ",
-    //     picFinger:`https://t4.ftcdn.net/jpg/00/48/33/19/360_F_48331948_WBcmcuA5D17FqT8vaAYP4KYKaGfVEora.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-گ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-گ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-گ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-گ.png`,],
-    //     examplePicId:"exampleGaf-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-5-گ-short.jpg`,
-    //     shortSoundId:"letterGaf-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-گ-long.jpg`,
-    //     longSoundId:"letterGaf-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-1-گ.jpg`,
+        title:"حرف گ ",
+        picFinger:`https://t4.ftcdn.net/jpg/00/48/33/19/360_F_48331948_WBcmcuA5D17FqT8vaAYP4KYKaGfVEora.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-گ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-گ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-گ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-گ.png`,],
+        examplePicId:"exampleGaf-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-5-گ-short.jpg`,
+        shortSoundId:"letterGaf-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-گ-long.jpg`,
+        longSoundId:"letterGaf-3"
+    },
     {
         mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ل.jpg`,
         title:"حرف ل ",
