@@ -17,8 +17,8 @@ import StoryPage3 from "../sections/story/StoryPage3";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded">بچه ها حرف گ را یاد گرفتند . بچه ها داستان زیر را بخوانند و از روی دو جمله آن، یک بار بنویسند.    </h4>
-      {/* <BrokenGlass/>   */}
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها کلمات زیر را بخوانند و از روی ده کلمه آن، یک بار بنویسند.    </h4>
+      <BrokenGlass/>  
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
