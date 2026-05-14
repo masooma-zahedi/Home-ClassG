@@ -18,13 +18,13 @@ import StoryPage3 from "../sections/story/StoryPage3";
 export default function Home() {
   return (<>
   <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها کلمات زیر را بخوانند و از روی ده کلمه آن، یک بار بنویسند.    </h4>
-      <BrokenGlass/>  
+      {/* <BrokenGlass/>   */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
-      {/* <BouncingBalls/> */}
+      <BouncingBalls/>
       {/* <SylabeWords/> */}
       {/* <WordGameWithCategories initialCategory="فروشگاه" /> */}
-        <StoryPage3 groupKey="alefba" wantedTitle="پِدَر وَ سَبَد"/>
+        <StoryPage3 groupKey="alefba" wantedTitle="مَن وَ ماکارونی"/>
     {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
