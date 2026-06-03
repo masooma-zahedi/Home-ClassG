@@ -200,17 +200,17 @@ export let infoCard = [
     //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ض-long.jpg`,
     //     longSoundId:"letterZad-3"
     // },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ط.jpg`,
-    //     title:"حرف ط ",
-    //     picFinger:`https://www.shutterstock.com/image-vector/cute-green-parrot-cartoon-vector-260nw-2025937472.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ط.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ط.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ط.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-4-ط.png`,],
-    //     examplePicId:"exampleTaa-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ط.jpg`,
-    //     shortSoundId:"letterTaa-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ط-long.jpg`,
-    //     longSoundId:"letterTaa-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ط.jpg`,
+        title:"حرف ط ",
+        picFinger:`https://www.shutterstock.com/image-vector/cute-green-parrot-cartoon-vector-260nw-2025937472.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ط.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ط.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ط.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-4-ط.png`,],
+        examplePicId:"exampleTaa-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ط.jpg`,
+        shortSoundId:"letterTaa-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ط-long.jpg`,
+        longSoundId:"letterTaa-3"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ظ.jpg`,
     //     title:"حرف ظ ",
