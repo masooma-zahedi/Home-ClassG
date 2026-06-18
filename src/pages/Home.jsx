@@ -14,17 +14,19 @@ import MatchingLettersPicturs from "../sections/alphabet/MatchingLettersPicturs"
 import SunWords from "../sections/alphabet/SunWords";
 import SentenceObject from "../sections/word/SentenceObject";
 import StoryPage3 from "../sections/story/StoryPage3";
+import SyllableApp from "../sections/alphabet/SyllableApp";
 
 export default function Home() {
   return (<>
   <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها کلمات زیر را بخوانند و از روی ده کلمه آن، یک بار بنویسند.    </h4>
-      <BrokenGlass/>  
+      {/* <BrokenGlass/>  */}
+      <SyllableApp category="س" /> 
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
       {/* <SylabeWords/> */}
       {/* <WordGameWithCategories initialCategory="فروشگاه" /> */}
-        <StoryPage3 groupKey="alefba" wantedTitle="مَن وَ ماکارونی"/>
+        <StoryPage3 groupKey="alefba" wantedTitle="مَن وَ ماکارانی"/>
     {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."
