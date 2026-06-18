@@ -25,7 +25,7 @@ export default function Home() {
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
       {/* <SylabeWords/> */}
-      {/* <WordGameWithCategories initialCategory="فروشگاه" /> */}
+      <WordGameWithCategories initialCategory="تابستان" />
         <StoryPage3 groupKey="alefba" wantedTitle="مَن وَ ماکارانی"/>
     {/* <VideoCard
       title="قصه کوتاه امروز"
