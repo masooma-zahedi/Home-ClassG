@@ -16,19 +16,21 @@ import SentenceObject from "../sections/word/SentenceObject";
 import StoryPage3 from "../sections/story/StoryPage3";
 import SyllableApp from "../sections/alphabet/SyllableApp";
 import MatchGame from "../sections/alphabet/MatchGame";
+import SyllableAppwithCategory from "../sections/alphabet/SyllableAppwithCategory";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها کلمات زیر را بخوانند و از روی ده کلمه آن، یک بار بنویسند.    </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها حرف ض را یاد گرفتند و داستان زیر را بخوانند و از روی 4 جمله آن، یک بار بنویسند.    </h4>
+        <SyllableAppwithCategory category="ض"/>
       {/* <BrokenGlass/>  */}
+      <StoryPage3 groupKey="alefba" wantedTitle="پِسَر وَ چَتر"/>
       {/* <SyllableApp3333 category="ق" />  */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
-      <BouncingBalls/>
+      {/* <BouncingBalls/> */}
       <MatchGame titleGame="weatherLearning"/>
       {/* <SylabeWords/> */}
-      <WordGameWithCategories initialCategory="تابستان" />
-        {/* <StoryPage3 groupKey="alefba" wantedTitle="مَن وَ ماکارانی"/> */}
+      {/* <WordGameWithCategories initialCategory="تابستان" /> */}
     {/* <VideoCard
       title="قصه کوتاه امروز"
       description="متن فارسی داستان زیر را بخوانید."

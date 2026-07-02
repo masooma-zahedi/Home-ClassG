@@ -189,17 +189,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ص-long.jpg`,
         longSoundId:"letterSad-3"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ض.jpg`,
-    //     title:"حرف ض ",
-    //     picFinger:`https://www.freevector.com/uploads/vector/preview/1120/FreeVector-Beating-Heart-Graphics.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ض.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ض.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ض.png`,],
-    //     examplePicId:"exampleZad-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ض.jpg`,
-    //     shortSoundId:"letterZad-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ض-long.jpg`,
-    //     longSoundId:"letterZad-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ض.jpg`,
+        title:"حرف ض ",
+        picFinger:`https://www.freevector.com/uploads/vector/preview/1120/FreeVector-Beating-Heart-Graphics.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ض.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ض.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ض.png`,],
+        examplePicId:"exampleZad-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ض.jpg`,
+        shortSoundId:"letterZad-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ض-long.jpg`,
+        longSoundId:"letterZad-3"
+    },
     {
         mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ط.jpg`,
         title:"حرف ط ",
