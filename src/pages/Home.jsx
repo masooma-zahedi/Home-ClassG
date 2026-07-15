@@ -20,15 +20,15 @@ import SyllableAppwithCategory from "../sections/alphabet/SyllableAppwithCategor
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها حرف ض را یاد گرفتند و داستان زیر را بخوانند و از روی 4 جمله آن، یک بار بنویسند.    </h4>
-        <SyllableAppwithCategory category="ض"/>
-      {/* <BrokenGlass/>  */}
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها حرف ظ را یاد گرفتند و داستان زیر را بخوانند و از روی 4 جمله آن، یک بار بنویسند.    </h4>
+        {/* <SyllableAppwithCategory category="ض"/> */}
+      <BrokenGlass/> 
       <StoryPage3 groupKey="alefba" wantedTitle="پِسَر وَ چَتر"/>
       {/* <SyllableApp3333 category="ق" />  */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
-      <MatchGame titleGame="weatherLearning"/>
+      {/* <MatchGame titleGame="weatherLearning"/> */}
       {/* <SylabeWords/> */}
       {/* <WordGameWithCategories initialCategory="تابستان" /> */}
     {/* <VideoCard

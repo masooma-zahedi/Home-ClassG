@@ -211,17 +211,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ط-long.jpg`,
         longSoundId:"letterTaa-3"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ظ.jpg`,
-    //     title:"حرف ظ ",
-    //     picFinger:`https://us.123rf.com/450wm/iimages/iimages1204/iimages120401865/13189260-illustration-of-utencils-on-white.jpg?ver=6`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ظ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ظ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ظ.png`,],
-    //     examplePicId:"exampleZaa-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ظ.jpg`,
-    //     shortSoundId:"letterZaa-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ظ-long.jpg`,
-    //     longSoundId:"letterZaa-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ظ.jpg`,
+        title:"حرف ظ ",
+        picFinger:`https://us.123rf.com/450wm/iimages/iimages1204/iimages120401865/13189260-illustration-of-utencils-on-white.jpg?ver=6`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ظ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ظ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ظ.png`,],
+        examplePicId:"exampleZaa-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ظ.jpg`,
+        shortSoundId:"letterZaa-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ظ-long.jpg`,
+        longSoundId:"letterZaa-3"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ع.jpg`,
     //     title:"حرف ع ",
