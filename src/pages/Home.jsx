@@ -20,9 +20,10 @@ import SyllableAppwithCategory from "../sections/alphabet/SyllableAppwithCategor
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها حرف ظ را یاد گرفتند و داستان زیر را بخوانند و از روی 4 جمله آن، یک بار بنویسند.    </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها حرف ع را یاد گرفتند و کلمات زیر را بخوانند و از روی 10 کلمه آن، یک بار بنویسند.    </h4>
         {/* <SyllableAppwithCategory category="ض"/> */}
-      <BrokenGlass/> 
+      {/* <BrokenGlass/>  */}
+              <WordFlipBox/>
       <StoryPage3 groupKey="alefba" wantedTitle="پِسَر وَ چَتر"/>
       {/* <SyllableApp3333 category="ق" />  */}
       {/* <SunWords /> */}
@@ -36,7 +37,6 @@ export default function Home() {
       description="متن فارسی داستان زیر را بخوانید."
       videoFileName={`${process.env.PUBLIC_URL}/video/big&big.mp4`}  // فقط اسم فایل ویدیوی mp4
     /> */}
-        {/* <WordFlipBox/> */}
       {/* <SpellingGame/> */}
       {/* <MatchingLettersPicturs/> */}
       <CardAlphaCompo/> 

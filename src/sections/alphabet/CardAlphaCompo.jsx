@@ -222,17 +222,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ظ-long.jpg`,
         longSoundId:"letterZaa-3"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ع.jpg`,
-    //     title:"حرف ع ",
-    //     picFinger:`https://img.freepik.com/free-vector/overflowing-honey-jar-illustration_1308-177967.jpg?semt=ais_incoming&w=740&q=80`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ع.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ع.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ع.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-4-ع.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/3-04-25-ع.png`],
-    //     examplePicId:"exampleAin-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ع.jpg`,
-    //     shortSoundId:"letterAin-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ع-long.jpg`,
-    //     longSoundId:"letterAin-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ع.jpg`,
+        title:"حرف ع ",
+        picFinger:`https://img.freepik.com/free-vector/overflowing-honey-jar-illustration_1308-177967.jpg?semt=ais_incoming&w=740&q=80`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ع.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ع.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ع.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/10-23-4-ع.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/3-04-25-ع.png`],
+        examplePicId:"exampleAin-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-23-11-ع.jpg`,
+        shortSoundId:"letterAin-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ع-long.jpg`,
+        longSoundId:"letterAin-3"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-غ.jpg`,
     //     title:"حرف غ ",

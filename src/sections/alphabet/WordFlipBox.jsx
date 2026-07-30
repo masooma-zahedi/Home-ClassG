@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 const wordCategories = {
-  "کلاس G-ن": ["نان","اَنار","نیش","نَرم","دَندان","آب نَبات","نَسیم","کَمان","تَکان","آتَش نِشان","نَردِبان","نارَس","نیکو","دانِش","نَمَد"],
+  "کلاس G-ن":  ["عَذاب","عَروس","عَزیز","بَعید","ضَعیف","طَبعی","عَطر","عُروج","عَصا","عَصَب","وَضع","طَبع","مَنع","عاشِق","عِشق"],
 };
 
 const getRandomColor = () => {
@@ -74,7 +74,7 @@ const WordFlipBox = () => {
     if (currentWord && !isSpinning) {
       const timer = setTimeout(() => {
         setShowSecondBox(true);
-      }, 2000); // بعد از ۵ ثانیه
+      }, 1000); // بعد از ۵ ثانیه
       return () => clearTimeout(timer);
     }
   }, [currentWord, isSpinning]);
