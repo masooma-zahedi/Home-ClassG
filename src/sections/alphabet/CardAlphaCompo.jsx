@@ -233,17 +233,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ع-long.jpg`,
         longSoundId:"letterAin-3"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-غ.jpg`,
-    //     title:"حرف غ ",
-    //     picFinger:`https://t3.ftcdn.net/jpg/07/76/56/86/360_F_776568637_C2EpKD7PWzxBlPwMqNn4w6cmIhWDa1vX.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-غ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-غ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-غ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-غ.png`,],
-    //     examplePicId:"exampleGhain-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-1-1-غ.jpg`,
-    //     shortSoundId:"letterGhain-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-غ-long.jpg`,
-    //     longSoundId:"letterGhain-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-غ.jpg`,
+        title:"حرف غ ",
+        picFinger:`https://t3.ftcdn.net/jpg/07/76/56/86/360_F_776568637_C2EpKD7PWzxBlPwMqNn4w6cmIhWDa1vX.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-غ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-غ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-غ.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-غ.png`,],
+        examplePicId:"exampleGhain-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-1-1-غ.jpg`,
+        shortSoundId:"letterGhain-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-غ-long.jpg`,
+        longSoundId:"letterGhain-3"
+    },
     {
         mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ف.jpg`,
         title:"حرف ف ",
