@@ -321,17 +321,17 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ن-long.jpg`,
         longSoundId:"letterNoon-3"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ه.jpg`,
-    //     title:"حرف ه ",
-    //     picFinger:`https://static.vecteezy.com/system/resources/thumbnails/003/697/705/small/airplane-cartoon-sticker-on-white-background-free-vector.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ه.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ه.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ه.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ه.png`,],
-    //     examplePicId:"exampleHaa-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-10-ه-short.jpg`,
-    //     shortSoundId:"letterHaa-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ه-long.jpg`,
-    //     longSoundId:"letterHaa-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ه.jpg`,
+        title:"حرف ه ",
+        picFinger:`https://static.vecteezy.com/system/resources/thumbnails/003/697/705/small/airplane-cartoon-sticker-on-white-background-free-vector.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ه.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ه.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ه.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ه.png`,],
+        examplePicId:"exampleHaa-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-10-ه-short.jpg`,
+        shortSoundId:"letterHaa-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ه-long.jpg`,
+        longSoundId:"letterHaa-3"
+    },
     // {
     //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-و.jpg`,
     //     title:"حرف و ",

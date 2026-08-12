@@ -20,10 +20,10 @@ import SyllableAppwithCategory from "../sections/alphabet/SyllableAppwithCategor
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها حرف غ را یاد گرفتند و کلمات زیر را بخوانند و از روی 10 کلمه آن، یک بار بنویسند.    </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها حرف ه را یاد گرفتند و کلمات زیر را بخوانند و از روی 10 کلمه آن، یک بار بنویسند.    </h4>
         {/* <SyllableAppwithCategory category="ض"/> */}
-      <BrokenGlass/> 
-              {/* <WordFlipBox/> */}
+      {/* <BrokenGlass/>  */}
+              <WordFlipBox/>
       <StoryPage3 groupKey="alefba" wantedTitle="گُلِ رَنگی"/>
       {/* <SyllableApp3333 category="ق" />  */}
       {/* <SunWords /> */}
