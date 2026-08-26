@@ -332,28 +332,28 @@ export let infoCard = [
         longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ه-long.jpg`,
         longSoundId:"letterHaa-3"
     },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-و.jpg`,
-    //     title:"حرف و ",
-    //     picFinger:`https://thumbs.dreamstime.com/b/cartoon-illustration-violin-musical-notes-watercolor-paint-white-background-graphic-element-depicts-orchestra-string-367411821.jpg`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-و.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-و.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-و.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-و.png`,],
-    //     examplePicId:"exampleWaw-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-9-و-short.jpg`,
-    //     shortSoundId:"letterWaw-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-و-long.jpg`,
-    //     longSoundId:"letterWaw-3"
-    // },
-    // {
-    //     mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ی.jpg`,
-    //     title:"حرف ی ",
-    //     picFinger:`https://png.pngtree.com/png-clipart/20241121/original/pngtree-vector-material-cartoon-refrigerator-open-download-png-image_17276433.png`,
-    //     examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ی.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ی.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ی.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ی.png`,],
-    //     examplePicId:"exampleYaa-1",
-    //     shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-11-ی-short.jpg`,
-    //     shortSoundId:"letterYaa-2",
-    //     longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ی-long.jpg`,
-    //     longSoundId:"letterYaa-3"
-    // },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-و.jpg`,
+        title:"حرف و ",
+        picFinger:`https://thumbs.dreamstime.com/b/cartoon-illustration-violin-musical-notes-watercolor-paint-white-background-graphic-element-depicts-orchestra-string-367411821.jpg`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-و.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-و.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-و.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-و.png`,],
+        examplePicId:"exampleWaw-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-9-و-short.jpg`,
+        shortSoundId:"letterWaw-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-و-long.jpg`,
+        longSoundId:"letterWaw-3"
+    },
+    {
+        mainPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-14-24-ی.jpg`,
+        title:"حرف ی ",
+        picFinger:`https://png.pngtree.com/png-clipart/20241121/original/pngtree-vector-material-cartoon-refrigerator-open-download-png-image_17276433.png`,
+        examplePic:[`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-1-ی.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-2-ی.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-3-ی.png`,`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/exampleAlpha/11-1-4-ی.png`,],
+        examplePicId:"exampleYaa-1",
+        shortSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/11-05-11-ی-short.jpg`,
+        shortSoundId:"letterYaa-2",
+        longSoundPic:`${process.env.PUBLIC_URL}/images/assetAlpha/cardAlpha/10-19-ی-long.jpg`,
+        longSoundId:"letterYaa-3"
+    },
 
 ]
 
