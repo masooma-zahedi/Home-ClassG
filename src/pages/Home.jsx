@@ -20,11 +20,11 @@ import SyllableAppwithCategory from "../sections/alphabet/SyllableAppwithCategor
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها داستان زیر را بخوانند و از روی 5 جمله آن  بنویسند.    </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها داستان زیر را بخوانند و از روی 4 جمله آن  بنویسند.    </h4>
         {/* <SyllableAppwithCategory category="ض"/> */}
       {/* <BrokenGlass/>  */}
               {/* <WordFlipBox/> */}
-      <StoryPage3 groupKey="alefba" wantedTitle="بادبادَک"/>
+      <StoryPage3 groupKey="alefba" wantedTitle="تُوتِ سُرخ"/>
       {/* <SyllableApp3333 category="ق" />  */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
