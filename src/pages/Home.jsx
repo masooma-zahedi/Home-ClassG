@@ -24,7 +24,7 @@ export default function Home() {
         {/* <SyllableAppwithCategory category="ض"/> */}
       {/* <BrokenGlass/>  */}
               {/* <WordFlipBox/> */}
-      <StoryPage3 groupKey="alefba" wantedTitle="گُربه وَ باد-1"/>
+      <StoryPage3 groupKey="alefba" wantedTitle="باران"/>
       {/* <SyllableApp3333 category="ق" />  */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
