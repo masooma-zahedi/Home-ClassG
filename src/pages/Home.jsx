@@ -17,6 +17,7 @@ import StoryPage3 from "../sections/story/StoryPage3";
 import SyllableApp from "../sections/alphabet/SyllableApp";
 import MatchGame from "../sections/alphabet/MatchGame";
 import SyllableAppwithCategory from "../sections/alphabet/SyllableAppwithCategory";
+import WordHouseGame from "../sections/alphabet/WordHouseGame";
 
 export default function Home() {
   return (<>
@@ -24,7 +25,8 @@ export default function Home() {
         {/* <SyllableAppwithCategory category="ض"/> */}
       {/* <BrokenGlass/>  */}
               {/* <WordFlipBox/> */}
-      <StoryPage3 groupKey="alefba" wantedTitle="باران"/>
+      <WordHouseGame/>
+      <StoryPage3 groupKey="alefba" wantedTitle="توپِ فوتبال"/>
       {/* <SyllableApp3333 category="ق" />  */}
       {/* <SunWords /> */}
       {/* <ObjectSentenceGame/> */}
