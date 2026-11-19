@@ -21,15 +21,15 @@ import WordHouseGame from "../sections/alphabet/WordHouseGame";
 
 export default function Home() {
   return (<>
-  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها جملات زیر را بخوانند و از روی 4 جمله آن  بنویسند.    </h4>
+  <h4 className="bg-warning p-2 text-primary text-center m-2 rounded"> بچه ها داستان زیر را بخوانند و از روی 4 جمله آن  بنویسند.    </h4>
         {/* <SyllableAppwithCategory category="ض"/> */}
       {/* <BrokenGlass/>  */}
               {/* <WordFlipBox/> */}
-      {/* <WordHouseGame/> */}
-      {/* <StoryPage3 groupKey="alefba" wantedTitle="توپِ فوتبال"/> */}
+      <WordHouseGame/>
+      <StoryPage3 groupKey="alefba" wantedTitle="بازی در بَرف"/>
       {/* <SyllableApp3333 category="ق" />  */}
       {/* <SunWords /> */}
-      <ObjectSentenceGame/>
+      {/* <ObjectSentenceGame/> */}
       {/* <BouncingBalls/> */}
       {/* <MatchGame titleGame="weatherLearning"/> */}
       {/* <SylabeWords/> */}
